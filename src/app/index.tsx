@@ -9,7 +9,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 export default function App() {
   return (
     <>
-      <SafeAreaView className="bg-primary h-full">
+      <SafeAreaView className="bg-primary-100 h-full">
         <ScrollView contentContainerStyle={{ height: '100%' }}>
           <View className="w-full h-full items-center px-4">
             <Image source={images.logo} className="w-[130px] h-[84px]" resizeMode="contain" />

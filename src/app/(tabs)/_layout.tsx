@@ -30,13 +30,12 @@ const TabsLayout = () => {
         screenOptions={{
           tabBarShowLabel: false,
           headerShown: false,
-          tabBarActiveTintColor: '#FFA001',
-          tabBarInactiveTintColor: '#CDCDE0',
+          tabBarActiveTintColor: '#0C5FFF',
+          tabBarInactiveTintColor: '#1F2937',
           tabBarStyle: {
-            backgroundColor: '#161622',
-            borderTopWidth: 1,
-            borderTopColor: '#232533',
+            backgroundColor: '#fff',
             height: 84,
+            paddingTop: 16
           },
         }}
       >
@@ -45,7 +44,7 @@ const TabsLayout = () => {
           options={{
             title: 'Home',
             headerShown: false,
-            tabBarIcon: (props) => <TabIcon name="Home" icon={icons.home} {...props} />,
+            tabBarIcon: (props) => <TabIcon name="" icon={icons.home} {...props} />,
           }}
         />
 
@@ -53,7 +52,7 @@ const TabsLayout = () => {
           name="bookmark"
           options={{
             title: 'Bookmark',
-            tabBarIcon: (props) => <TabIcon name="Bookmark" icon={icons.bookmark} {...props} />,
+            tabBarIcon: (props) => <TabIcon name="" icon={icons.challenge} {...props} />,
           }}
         />
 
@@ -61,7 +60,15 @@ const TabsLayout = () => {
           name="create"
           options={{
             title: 'Create',
-            tabBarIcon: (props) => <TabIcon name="Create" icon={icons.plus} {...props} />,
+            tabBarIcon: (props) => <TabIcon name="" icon={icons.post} {...props} />,
+          }}
+        />
+
+        <Tabs.Screen
+          name="history"
+          options={{
+            title: 'History',
+            tabBarIcon: (props) => <TabIcon name="" icon={icons.history} {...props} />,
           }}
         />
 
@@ -69,7 +76,7 @@ const TabsLayout = () => {
           name="profile"
           options={{
             title: 'Profile',
-            tabBarIcon: (props) => <TabIcon name="Profile" icon={icons.profile} {...props} />,
+            tabBarIcon: (props) => <TabIcon name="" icon={icons.profile} {...props} />,
           }}
         />
       </Tabs>

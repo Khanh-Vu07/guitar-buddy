@@ -4,4 +4,5 @@ export enum ERouteTable {
   SIGIN_UP = '/sign-up',
 
   HOME = '/home',
+  VERIFY_ACCOUNT = '/verify-account',
 }

@@ -1,5 +1,6 @@
 {
   "expo": {
+    "jsEngine": "jsc",
     "name": "template-expo-app",
     "slug": "template-expo-app",
     "version": "1.0.0",
