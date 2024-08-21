@@ -15,7 +15,7 @@ export default function History() {
         horizontal={false}
         data={data}
         renderItem={(item) => (
-          <ItemHomeHorizontal data={item.item} isHistory={false} pathName="/history/[history-detail]" />
+          <ItemHomeHorizontal data={item.item} isHistory={false} pathName="/[history-detail]" />
         )}
       />
     </SafeAreaView>

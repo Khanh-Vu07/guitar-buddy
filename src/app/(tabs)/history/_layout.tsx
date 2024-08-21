@@ -14,10 +14,6 @@ const FavoritesScreenLayout = () => {
         name="history"
         options={{}}
       />
-      <Stack.Screen
-        name="[history-detail]"
-        options={{}}
-      />
     </Stack>
   )
 }

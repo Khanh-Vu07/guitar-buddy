@@ -9,10 +9,6 @@ const FavoritesScreenLayout = () => {
         name="create"
         options={{}}
       />
-      <Stack.Screen
-        name="create-detail"
-        options={{}}
-      />
     </Stack>
   )
 }

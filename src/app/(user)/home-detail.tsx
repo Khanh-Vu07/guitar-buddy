@@ -3,7 +3,6 @@ import { AntDesign } from '@expo/vector-icons'
 import { router, useLocalSearchParams } from 'expo-router'
 import React from 'react'
 import CustomButton from '@/components/CustomButton'
-import { MusicPlayer } from '@/components/Tabdetail/MusicPlayerBar'
 
 export default function HomeDetail() {
   const params = useLocalSearchParams()
@@ -21,7 +20,7 @@ export default function HomeDetail() {
         >
           <AntDesign name="left" size={24} color="#FFFFFF" />
         </TouchableOpacity>
-        <ScrollView className="flex-1" showsVerticalScrollIndicator={false}>
+        <ScrollView className="flex-1 mb-3" showsVerticalScrollIndicator={false}>
           <View className="px-4 mt-4">
             <Text className="text-[#0C5FFF] font-bold text-xl">{item.name}</Text>
             <Text className="mt-2">{item.shortDescription}</Text>
@@ -46,9 +45,7 @@ export default function HomeDetail() {
               textStyle="text-white"
             />
           </View>
-          <MusicPlayer />
         </ScrollView>
-
       </View>
     </View>
   )

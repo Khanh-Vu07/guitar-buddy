@@ -9,14 +9,6 @@ const FavoritesScreenLayout = () => {
         name="profile"
         options={{}}
       />
-      <Stack.Screen
-        name="edit-profile"
-        options={{}}
-      />
-      <Stack.Screen
-        name="change-pasword"
-        options={{}}
-      />
     </Stack>
   )
 }

@@ -1,4 +1,4 @@
-import { FlatList, Image, SafeAreaView, Text, TouchableOpacity, View } from 'react-native'
+import { FlatList, SafeAreaView, Text, TouchableOpacity, View } from 'react-native'
 import { router, useLocalSearchParams } from 'expo-router'
 import { AntDesign, EvilIcons } from '@expo/vector-icons'
 import data from '@/data/music.json'
@@ -17,7 +17,7 @@ export default function DetailLevel() {
         >
           <AntDesign name="left" size={24} color="black" />
         </TouchableOpacity>
-        <Text className="font-medium text-[#1F2937] text-xl">{title}</Text>
+        <Text className="font-medium text-[#1F2937] text-xl">{title ?? ""}</Text>
         <TouchableOpacity  onPress={() => router.push('/search')}>
           <EvilIcons name="search" size={30} color="#6B7280" />
         </TouchableOpacity>
@@ -29,7 +29,7 @@ export default function DetailLevel() {
           horizontal={false}
           data={data}
           renderItem={(item) => (
-            <ItemHomeHorizontal data={item.item} pathName="/home/home-detail" />
+            <ItemHomeHorizontal data={item.item} pathName="/home-detail" />
           )}
         />
       </View>

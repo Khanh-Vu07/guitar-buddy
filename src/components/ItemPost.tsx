@@ -8,7 +8,7 @@ interface IItemPostProps {
 
 export default function ItemPost({data}: IItemPostProps){
   return(
-    <TouchableOpacity className="flex mb-2 flex-row items-center" onPress={() => router.push({pathname: "/create/create-detail", params: {
+    <TouchableOpacity className="flex mb-2 flex-row items-center" onPress={() => router.push({pathname: "/create-detail", params: {
         data: JSON.stringify(data)
       }})}>
       <Image

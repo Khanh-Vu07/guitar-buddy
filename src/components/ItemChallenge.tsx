@@ -8,12 +8,11 @@ interface IItemChallengeProps {
 
 export default function ItemChallenge({data}: IItemChallengeProps){
   const router = useRouter();
-  console.log(data, "---name")
 
   return(
     <TouchableOpacity
       className="flex mb-2 flex-row items-center border-b border-b-[#F3F4F6] pb-2"
-      onPress={() => router.push({pathname: '/bookmark/bookmark-detail', params: {
+      onPress={() => router.push({pathname: '/bookmark-detail', params: {
        image: data.imageMusic
       }})}>
       <Image

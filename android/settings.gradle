@@ -1,4 +1,4 @@
-rootProject.name = 'template-expo-app'
+rootProject.name = 'piano-app'
 
 dependencyResolutionManagement {
   versionCatalogs {

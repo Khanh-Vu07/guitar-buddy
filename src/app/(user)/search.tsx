@@ -27,12 +27,10 @@ export default function Search() {
           horizontal={false}
           data={data}
           renderItem={(item) => (
-            <ItemHomeHorizontal data={item.item} pathName="/home/home-detail" />
+            <ItemHomeHorizontal data={item.item} pathName="/home-detail" />
           )}
         />
       </View>
-
-
     </SafeAreaView>
   )
 }

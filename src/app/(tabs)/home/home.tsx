@@ -21,7 +21,7 @@ const Home = () => {
           horizontal
           data={data}
           renderItem={(item) => (
-            <ItemHomeAbsolute data={item.item}  pathName="/home/home-detail"  />
+            <ItemHomeAbsolute data={item.item}  pathName="/home-detail"  />
           )}
         />
         <TitleHome title="Cấp Độ Dễ" onPress={() => router.push({pathname: '/detail-level', params: {
@@ -33,7 +33,7 @@ const Home = () => {
           horizontal
           data={data}
           renderItem={(item) => (
-            <ItemHomeVertical data={item.item} pathName="/home/home-detail" />
+            <ItemHomeVertical data={item.item} pathName="/home-detail" />
           )}
         />
         <TitleHome title="Cấp Độ Trung Bình" onPress={() => router.push({pathname: '/detail-level', params: {
@@ -45,7 +45,7 @@ const Home = () => {
           horizontal
           data={data}
           renderItem={(item) => (
-            <ItemHomeVertical data={item.item} pathName="/home/home-detail" />
+            <ItemHomeVertical data={item.item} pathName="/home-detail" />
           )}
         />
         <TitleHome title="Cấp Độ Khó" onPress={() => router.push({pathname: '/detail-level', params: {
@@ -57,7 +57,7 @@ const Home = () => {
           horizontal
           data={data}
           renderItem={(item) => (
-            <ItemHomeVertical data={item.item} pathName="/home/home-detail" />
+            <ItemHomeVertical data={item.item} pathName="/home-detail" />
           )}
         />
         <TitleHome title="Tất Cả Cấp Độ" onPress={() => router.push({pathname: '/detail-level', params: {
@@ -70,7 +70,7 @@ const Home = () => {
           horizontal={false}
           data={data}
           renderItem={(item) => (
-            <ItemHomeHorizontal data={item.item} pathName="/home/home-detail" />
+            <ItemHomeHorizontal data={item.item} pathName="/home-detail" />
           )}
         />
       </ScrollView>

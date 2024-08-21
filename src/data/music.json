@@ -21,7 +21,31 @@
       "exercise": {
         "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
         "soundLink": "https://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3"
-      }
+      },
+      "test": [
+        {
+          "question": "Câu 1: Trong các quãng sau, quãng nào là quãng 5?",
+          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
+          "options": [
+            "Quãng A",
+            "Quãng B",
+            "Quãng C",
+            "Quãng D"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "question": "Câu 2: Trong các nốt sau, nốt nào là nốt Đô?",
+          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
+          "options": [
+            "Nốt A",
+            "Nốt B",
+            "Nốt C",
+            "Nốt D"
+          ],
+          "correctAnswerIndex": 2
+        }
+      ]
     }
   },
   {
@@ -46,7 +70,31 @@
       "exercise": {
         "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
         "soundLink": "https://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3"
-      }
+      },
+      "test": [
+        {
+          "question": "Câu 1: Trong các quãng sau, quãng nào là quãng 5?",
+          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
+          "options": [
+            "Quãng A",
+            "Quãng B",
+            "Quãng C",
+            "Quãng D"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "question": "Câu 2: Trong các nốt sau, nốt nào là nốt Đô?",
+          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
+          "options": [
+            "Nốt A",
+            "Nốt B",
+            "Nốt C",
+            "Nốt D"
+          ],
+          "correctAnswerIndex": 2
+        }
+      ]
     }
   },
   {
@@ -71,7 +119,31 @@
       "exercise": {
         "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
         "soundLink": "https://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3"
-      }
+      },
+      "test": [
+        {
+          "question": "Câu 1: Trong các quãng sau, quãng nào là quãng 5?",
+          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
+          "options": [
+            "Quãng A",
+            "Quãng B",
+            "Quãng C",
+            "Quãng D"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "question": "Câu 2: Trong các nốt sau, nốt nào là nốt Đô?",
+          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
+          "options": [
+            "Nốt A",
+            "Nốt B",
+            "Nốt C",
+            "Nốt D"
+          ],
+          "correctAnswerIndex": 2
+        }
+      ]
     }
   }
 ]

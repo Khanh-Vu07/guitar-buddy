@@ -1,94 +1,96 @@
-// App.js
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
-import { Audio } from 'expo-av';
+import TrackPlayer, {
+  Capability,
+  State,
+  usePlaybackState,
+  useProgress,
+} from 'react-native-track-player';
 import Slider from '@react-native-community/slider';
+import IconSkipBackward from '@/assets/iconSvg/IconSkipBackward'
+import IconSkipForward from '@/assets/iconSvg/IconSkipForward'
+import { Entypo, Feather } from '@expo/vector-icons'
 
-export const MusicPlayer = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [sound, setSound] = useState(null);
-  const [position, setPosition] = useState(0);
-  const [duration, setDuration] = useState(0);
+const MusicPlayer: React.FC = () => {
+  const playbackState = usePlaybackState();
+  const progress = useProgress();
 
-  const soundRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
   useEffect(() => {
-    return sound ? () => sound.unloadAsync() : undefined;
-  }, [sound]);
+    setupPlayer();
+    return () => {
+      TrackPlayer.reset(); // Use reset instead of destroy
+    };
+  }, []);
 
-  const playPauseAudio = async () => {
-    if (sound) {
-      if (isPlaying) {
-        await sound.pauseAsync();
-      } else {
-        await sound.playAsync();
-      }
-      setIsPlaying(!isPlaying);
-    }
+  const setupPlayer = async () => {
+    await TrackPlayer.setupPlayer();
+    await TrackPlayer.add({
+      id: 'trackId',
+      url: 'https://audio.jukehost.co.uk/vTRYaTEbpaYRCxiWGgL2S91mnOuMKfLw',
+      title: 'Track Title',
+      artist: 'Track Artist',
+    });
+
+    TrackPlayer.updateOptions({
+      stopWithApp: true,
+      capabilities: [
+        Capability.Play,
+        Capability.Pause,
+        Capability.SeekTo,
+      ],
+      compactCapabilities: [
+        Capability.Play,
+        Capability.Pause,
+      ],
+    });
   };
 
-  const loadAudio = async () => {
-    const { sound } = await Audio.Sound.createAsync(
-      { uri: 'https://example.com/song.mp3' },
-      { shouldPlay: false },
-      onPlaybackStatusUpdate
-    );
-    soundRef.current = sound;
-    setSound(sound);
-  };
-
-  const onPlaybackStatusUpdate = (status) => {
-    if (status.isLoaded) {
-      setPosition(status.positionMillis);
-      setDuration(status.durationMillis);
+  const togglePlayPause = async () => {
+    if (playbackState === State.Playing) {
+      await TrackPlayer.pause();
+      setIsPlaying(false);
+    } else {
+      await TrackPlayer.play();
+      setIsPlaying(true);
     }
   };
 
   const skipForward = async () => {
-    if (sound) {
-      const newPosition = position + 10000; // skip 10 seconds
-      await sound.setPositionAsync(newPosition);
-    }
+    let newPosition = progress.position + 10;
+    if (newPosition > progress.duration) newPosition = progress.duration;
+    await TrackPlayer.seekTo(newPosition);
   };
 
   const skipBackward = async () => {
-    if (sound) {
-      const newPosition = position - 10000; // back 10 seconds
-      await sound.setPositionAsync(newPosition);
-    }
+    let newPosition = progress.position - 10;
+    if (newPosition < 0) newPosition = 0;
+    await TrackPlayer.seekTo(newPosition);
   };
 
-  const onSliderValueChange = async (value) => {
-    if (sound) {
-      await sound.setPositionAsync(value);
-    }
+  const onSliderValueChange = async (value: number) => {
+    await TrackPlayer.seekTo(value);
   };
-
-  useEffect(() => {
-    loadAudio();
-  }, []);
 
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={skipBackward} style={styles.button}>
-        <Text style={styles.buttonText}>⏪ 10s</Text>
+        <IconSkipBackward />
       </TouchableOpacity>
-      <TouchableOpacity onPress={playPauseAudio} style={styles.button}>
-        <Text style={styles.buttonText}>{isPlaying ? '⏸️' : '▶️'}</Text>
+      <TouchableOpacity onPress={togglePlayPause} style={styles.button} className="bg-[#0C5FFF] rounded-full">
+        {!isPlaying ? <Feather name="play" size={20} color="#fff" />: <Feather name="pause" size={20} color="#fff" />}
       </TouchableOpacity>
       <TouchableOpacity onPress={skipForward} style={styles.button}>
-        <Text style={styles.buttonText}>⏩ 10s</Text>
+        <IconSkipForward />
       </TouchableOpacity>
       <Slider
         style={styles.slider}
         minimumValue={0}
-        maximumValue={duration}
-        value={position}
+        maximumValue={progress.duration}
+        value={progress.position}
         onValueChange={onSliderValueChange}
       />
-      <TouchableOpacity onPress={() => {}} style={styles.button}>
-        <Text style={styles.buttonText}>🔊</Text>
-      </TouchableOpacity>
     </View>
   );
 };
@@ -98,7 +100,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: 20,
   },
   button: {
     padding: 10,
@@ -111,3 +112,5 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
 });
+
+export default MusicPlayer;

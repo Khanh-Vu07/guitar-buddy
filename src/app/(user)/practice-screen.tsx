@@ -14,7 +14,7 @@ export default function PracticeScreen() {
   const renderTab = (item) => {
     switch (activeTab) {
       case "test":
-        return <TestTab />
+        return <TestTab data={item} />
       default:
         return <LessonTab data={item} />
     }

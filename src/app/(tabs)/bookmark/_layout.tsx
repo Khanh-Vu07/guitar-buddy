@@ -14,10 +14,6 @@ const FavoritesScreenLayout = () => {
         name="bookmark"
         options={{}}
       />
-      <Stack.Screen
-        name="bookmark-detail"
-        options={{}}
-      />
     </Stack>
   )
 }

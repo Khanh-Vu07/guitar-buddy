@@ -24,7 +24,7 @@ const Profile = () => {
         </View>
         <TouchableOpacity
           className="flex-row justify-between items-center pb-2 border-b border-b-[#D1D5DB] mt-2"
-          onPress={() => router.navigate('/profile/edit-profile')}
+          onPress={() => router.navigate('/edit-profile')}
         >
           <View className="flex flex-row gap-2 items-center">
             <Image
@@ -36,7 +36,7 @@ const Profile = () => {
           </View>
           <AntDesign name="right" size={20} color="#6B7280" />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => router.navigate('/profile/change-pasword')} className="flex-row justify-between items-center pb-2 border-b border-b-[#D1D5DB] mt-2">
+        <TouchableOpacity onPress={() => router.navigate('/change-pasword')} className="flex-row justify-between items-center pb-2 border-b border-b-[#D1D5DB] mt-2">
           <View className="flex flex-row gap-2 items-center">
             <Image
               source={images.iconChangePass}
