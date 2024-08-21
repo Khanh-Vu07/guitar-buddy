@@ -19,13 +19,13 @@ export default function HistoryDetail() {
         >
           <AntDesign name="left" size={24} color="#FFFFFF" />
         </TouchableOpacity>
-        <View className="flex-row">
-          <Text className="text-[#FFFFFFAD] absolute bottom-[12px] left-2">15/01/2024</Text>
-          <View className="absolute bottom-[12px] right-2 flex-col items-center">
-            <Text className="text-[#FFFFFF] font-bold">10/12</Text>
-            <Text className="text-[#FFFFFFAD]">Điểm cao nhất</Text>
-          </View>
-        </View>
+        {/*<View className="flex-row">*/}
+        {/*  <Text className="text-[#FFFFFFAD] absolute bottom-[12px] left-2">15/01/2024</Text>*/}
+        {/*  <View className="absolute bottom-[12px] right-2 flex-col items-center">*/}
+        {/*    <Text className="text-[#FFFFFF] font-bold">10/12</Text>*/}
+        {/*    <Text className="text-[#FFFFFFAD]">Điểm cao nhất</Text>*/}
+        {/*  </View>*/}
+        {/*</View>*/}
         <ScrollView className="flex-1" showsVerticalScrollIndicator={false}>
           <View className="px-4 mt-4">
             <Text className="text-[#0C5FFF] font-bold text-xl">{item.name}</Text>
