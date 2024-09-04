@@ -21,7 +21,7 @@ export default function HomeDetail() {
   const { data } = params
   const item = JSON.parse(data)
   return (
-    <SafeAreaView className="flex-1">
+    <SafeAreaView className="flex-1 bg-white">
       <View className="bg-white flex-1">
         <View className="relative h-[200px] flex-1">
           <View className="w-full rounded-2xl my-2 h-[200px]">
