@@ -1212,6 +1212,27 @@ PODS:
   - react-native-track-player (4.1.1):
     - React-Core
     - SwiftAudioEx (= 1.1.0)
+  - react-native-webview (13.8.6):
+    - DoubleConversion
+    - glog
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Codegen
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - React-nativeconfig (0.74.3)
   - React-NativeModulesApple (0.74.3):
     - glog
@@ -1508,6 +1529,7 @@ DEPENDENCIES:
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - "react-native-slider (from `../node_modules/@react-native-community/slider`)"
   - react-native-track-player (from `../node_modules/react-native-track-player`)
+  - react-native-webview (from `../node_modules/react-native-webview`)
   - React-nativeconfig (from `../node_modules/react-native/ReactCommon`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -1643,6 +1665,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-community/slider"
   react-native-track-player:
     :path: "../node_modules/react-native-track-player"
+  react-native-webview:
+    :path: "../node_modules/react-native-webview"
   React-nativeconfig:
     :path: "../node_modules/react-native/ReactCommon"
   React-NativeModulesApple:
@@ -1748,6 +1772,7 @@ SPEC CHECKSUMS:
   react-native-safe-area-context: dcab599c527c2d7de2d76507a523d20a0b83823d
   react-native-slider: 4c9c8d0c5dd856e6ff298a448f62fa9fd372d36f
   react-native-track-player: 82ef1756ffeea61140fea17519ecd6d64ec3cf3e
+  react-native-webview: a3e6594232398c6f89bed9cecf4acb9e89517a65
   React-nativeconfig: fa5de9d8f4dbd5917358f8ad3ad1e08762f01dcb
   React-NativeModulesApple: a6c18ebe96428589977f43c41a2c811b27bbd9cc
   React-perflogger: 7bb9ba49435ff66b666e7966ee10082508a203e8

@@ -1,8 +1,20 @@
-import { Image, SafeAreaView, ScrollView, Text, TouchableOpacity, View } from 'react-native'
+import {
+  Dimensions,
+  Image,
+  SafeAreaView,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native'
 import { AntDesign } from '@expo/vector-icons'
 import { router, useLocalSearchParams } from 'expo-router'
 import React from 'react'
 import CustomButton from '@/components/CustomButton'
+import { WebView } from 'react-native-webview'
+
+const demoVideoSrc =
+  '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/SFpXwAbwP3Q?si=qNz7cs_X2yiRUA2W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 
 export default function HomeDetail() {
   const params = useLocalSearchParams()
@@ -12,8 +24,13 @@ export default function HomeDetail() {
     <SafeAreaView className="flex-1">
       <View className="bg-white flex-1">
         <View className="relative h-[200px] flex-1">
-          <Image source={{ uri: item.thumbnail }} className="w-full h-[200px]" resizeMode="cover" />
-
+          <View className="w-full rounded-2xl my-2 h-[200px]">
+            <WebView
+              className="w-full h-full"
+              originWhitelist={['*']}
+              source={{ html: demoVideoSrc }}
+            />
+          </View>
           <ScrollView className="flex-1 mb-3" showsVerticalScrollIndicator={false}>
             <View>
               <TouchableOpacity
@@ -31,11 +48,7 @@ export default function HomeDetail() {
               {item.target.map((item: string, index: number) => (
                 <Text key={index} className="mb-1">{`\u2022 ${item}`}</Text>
               ))}
-              <Image
-                source={{ uri: item.thumbnail }}
-                className="w-full h-[200px] rounded-2xl my-2"
-                resizeMode="cover"
-              />
+
               <Text className="font-bold my-2">Học các kiến thức nhạc lý cơ bản</Text>
               {item.detailLearn.map((item: string, index: number) => (
                 <Text key={index} className="mb-1">{`\u2022 ${item}`}</Text>
