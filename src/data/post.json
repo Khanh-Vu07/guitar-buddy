@@ -1,9 +1,9 @@
 [
   {
     "id": "1",
-    "name": "Lời chia sẻ từ một bà mẹ cho con học piano từ sớm",
-    "shortDescription": "Vài năm trước, tôi muốn đứa con năm tuổi của mình bắt đầu học piano. Tôi thường ước rằng tôi đã học một nhạc cụ khi tôi còn nhỏ. Vì vậy, không có ý tưởng thực sự về những gì tôi đang làm, tôi đã lên mạng và bắt đầu đặt câu hỏi.",
-    "banner": "https://capian.co/assets/images/uploads/blog/ckia8-music-lockdown-1fa0fb8b.jpg",
+    "name": "Tự Học Đàn Piano Cho Người Mới Bắt Đầu",
+    "shortDescription": "Bạn đã bao giờ mong muốn có thể tự đánh piano với bài hát mà bạn yêu thích nhất cho người mình yêu nhất\nMÀ KHÔNG phải mất quá nhiều thời gian và tiền bạc để học không?",
+    "banner": "https://vn.yamaha.com/vi/files/hocpianocoban_2-min_bc0b807f79df11b61d3f081763992efa.jpg",
     "author": "Hung tran",
     "contentTop": ["Làm quen với các nốt nhạc",
       "Học đàn piano vỡ lòng",
@@ -12,13 +12,14 @@
     "contentBottom": ["Làm quen với các nốt nhạc",
       "Học đàn piano vỡ lòng",
       "Học các hợp âm cơ bản",
-      "Luyện ngón tay với phím đàn piano cơ bản"]
+      "Luyện ngón tay với phím đàn piano cơ bản"],
+    "linkPost": "https://vn.yamaha.com/vi/news_events/2020/cach-tu-hoc-piano-co-ban-tai-nha-tot-nhat.html"
   },
   {
     "id": "2",
-    "name": "Lời chia sẻ từ một bà mẹ cho con học piano từ sớm",
-    "shortDescription": "Vài năm trước, tôi muốn đứa con năm tuổi của mình bắt đầu học piano. Tôi thường ước rằng tôi đã học một nhạc cụ khi tôi còn nhỏ. Vì vậy, không có ý tưởng thực sự về những gì tôi đang làm, tôi đã lên mạng và bắt đầu đặt câu hỏi.",
-    "banner": "https://capian.co/assets/images/uploads/blog/ckia8-music-lockdown-1fa0fb8b.jpg",
+    "name": "THI CHỨNG CHỈ ÂM NHẠC QUỐC TẾ CÓ MẮC KHÔNG?",
+    "shortDescription": "Ngày nay, các chứng chỉ âm nhạc quốc tế đã trở thành một tiêu chuẩn đánh giá trình độ âm nhạc được công nhận rộng rãi trên khắp thế giới. Không chỉ các học viên, là những người không có bằng cấp âm nhạc chính quy, mà ngay cả các giáo viên cũng rất quan tâm đến việc tham gia các kỳ thi này. Tuy nhiên, thách thức không chỉ nằm ở mặt chuyên môn mà còn ở vấn đề tài chính, khi chi phí tham gia các kỳ thi khá cao và không được hoàn lại nếu thí sinh không vượt qua. Hiểu rõ khó khăn này, trường âm nhạc Yamaha đã đưa ra mức lệ phí thi chứng chỉ âm nhạc quốc tế Yamaha mới, với mức giảm đáng kể, chỉ bằng hơn một nửa mức lệ phí cũ, tương đương với học phí của một giờ học piano.",
+    "banner": "https://vn.yamaha.com/vi/files/xac-dinh-trinh-do-am-nhac-voi-he-thong-chung-chi-am-nhac-yamaha-02_465fca245adee2fdec7a37b1b3b58150.png",
     "author": "Hung tran japan",
     "contentTop": ["Làm quen với các nốt nhạc",
       "Học đàn piano vỡ lòng",
@@ -27,6 +28,7 @@
     "contentBottom": ["Làm quen với các nốt nhạc",
       "Học đàn piano vỡ lòng",
       "Học các hợp âm cơ bản",
-      "Luyện ngón tay với phím đàn piano cơ bản"]
+      "Luyện ngón tay với phím đàn piano cơ bản"],
+    "linkPost": "https://vn.yamaha.com/vi/news_events/2024/thi-chung-chi-am-nhac-quoc-te-co-mac-khong.html"
   }
 ]

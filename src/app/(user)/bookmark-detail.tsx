@@ -2,6 +2,8 @@ import { Image, SafeAreaView, Text, TouchableOpacity, View } from 'react-native'
 import { router, useLocalSearchParams } from 'expo-router'
 import React from 'react'
 import { AntDesign } from '@expo/vector-icons'
+import { WebView } from 'react-native-webview'
+import { LoadingAnimation } from '@/app/component/LoadingAnimation'
 
 export default function BookmarkDetail() {
   const params = useLocalSearchParams()
@@ -17,12 +19,14 @@ export default function BookmarkDetail() {
       </View>
       <View>
       </View>
-      <Image
+      <WebView
+        className="w-full h-full"
+        originWhitelist={['*']}
         source={{
-          uri: image ??
-            'https://i.pinimg.com/736x/5d/a4/4f/5da44f45038c231b47abc95d144b6186.jpg',
+          uri: image
         }}
-        className="w-full h-[70%] rounded-2xl" resizeMode="cover"
+        startInLoadingState={true}
+        renderLoading={() => <LoadingAnimation />}
       />
     </SafeAreaView>
   )

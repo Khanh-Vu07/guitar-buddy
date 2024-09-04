@@ -9,17 +9,23 @@ import {
 } from 'react-native'
 import { AntDesign } from '@expo/vector-icons'
 import { router, useLocalSearchParams } from 'expo-router'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CustomButton from '@/components/CustomButton'
 import { WebView } from 'react-native-webview'
-
-const demoVideoSrc =
-  '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/SFpXwAbwP3Q?si=qNz7cs_X2yiRUA2W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+import { LoadingAnimation } from '@/app/component/LoadingAnimation'
 
 export default function HomeDetail() {
   const params = useLocalSearchParams()
   const { data } = params
   const item = JSON.parse(data)
+  const [linkVideo, setLinkVideo] = useState('https://www.youtube.com/embed/SFpXwAbwP3Q?si=qNz7cs_X2yiRUA2W')
+
+  useEffect(() => {
+    if(item?.videoThumbnail) {
+      setLinkVideo(item.videoThumbnail)
+    }
+  }, [item])
+
   return (
     <SafeAreaView className="flex-1 bg-white">
       <View className="bg-white flex-1">
@@ -28,7 +34,11 @@ export default function HomeDetail() {
             <WebView
               className="w-full h-full"
               originWhitelist={['*']}
-              source={{ html: demoVideoSrc }}
+              source={{
+                uri: linkVideo
+            }}
+              startInLoadingState={true}
+              renderLoading={() => <LoadingAnimation />}
             />
           </View>
           <ScrollView className="flex-1 mb-3" showsVerticalScrollIndicator={false}>

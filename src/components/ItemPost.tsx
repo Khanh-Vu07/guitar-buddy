@@ -15,8 +15,8 @@ export default function ItemPost({data}: IItemPostProps){
         source={{uri: data.banner}}
         className="w-[96px] h-[96px] rounded-2xl" resizeMode="cover" />
       <View>
-        <Text className="font-medium ml-2 mt-2 max-w-[95%]" numberOfLines={2}>{data.name}</Text>
-        <Text className="font-light ml-2 mt-2 max-w-[95%]" numberOfLines={2}>{data.shortDescription}</Text>
+        <Text className="font-medium ml-2 mt-2 max-w-[80%]" numberOfLines={2}>{data.name}</Text>
+        <Text className="font-light ml-2 mt-2 max-w-[80%]" numberOfLines={2}>{data.shortDescription}</Text>
       </View>
     </TouchableOpacity>
   )

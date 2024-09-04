@@ -1,44 +1,37 @@
-import { View, Text, Image, TouchableOpacity, ScrollView } from 'react-native'
+import { View, Text, Image, TouchableOpacity, ScrollView, SafeAreaView } from 'react-native'
 import { router, useLocalSearchParams } from 'expo-router'
 import { AntDesign } from '@expo/vector-icons'
 import React from 'react'
+import { WebView } from 'react-native-webview'
+import { LoadingAnimation } from '@/app/component/LoadingAnimation'
 
 export default function CreateDetail() {
   const params = useLocalSearchParams()
   const { data } = params
   const item = JSON.parse(data)
 
-  return (
-    <View className="bg-white flex-1">
-      <View className="relative h-[200px] flex-1">
-        <Image
-          source={{uri: item.banner}}
-          className="w-full h-[200px]" resizeMode="cover" />
-        <TouchableOpacity
-          className="mt-14 ml-4 absolute"
-          onPress={() => router.back()}
-        >
-          <AntDesign name="left" size={24} color="#FFFFFF" />
-        </TouchableOpacity>
-        <ScrollView className="flex-1" showsVerticalScrollIndicator={false}>
-          <View className="px-4 mt-4">
-            <Text className="text-[#0C5FFF] font-bold text-xl">{item.name}</Text>
-            <Text className="my-2">{item.shortDescription}</Text>
-            {item.contentTop.map((item: string, index: number) => (
-              <Text key={index} className="mb-1">{`${item}`}</Text>
-            ))}
-            <Image
-              source={{uri: item.banner}}
-              className="w-full h-[200px] my-2" resizeMode="cover"
-            />
-            {item.contentBottom.map((item: string, index: number) => (
-              <Text key={index} className="mb-1">{`${item}`}</Text>
-            ))}
-            <Text className="text-[#0C5FFF] mt-2">Biên dịch: {item.author}</Text>
-          </View>
-        </ScrollView>
+  const runFirst = `
+      document.getElementsByClassName('page-header').style.display = 'none';
+      true; // note: this is required, or you'll sometimes get silent failures
+    `;
 
-      </View>
-    </View>
+  return (
+    <SafeAreaView className="bg-white flex-1">
+      <TouchableOpacity onPress={() => router.back()} className="flex pb-2 flex-row mx-4 items-center gap-2">
+        <AntDesign name="left" size={24} color="black" />
+        <Text className="font-semibold text-xl">Trở lại</Text>
+      </TouchableOpacity>
+      <WebView
+        className="w-full h-full"
+        source={{
+          uri: item.linkPost
+        }}
+        javaScriptEnabled={true}
+        injectedJavaScript={runFirst}
+        startInLoadingState={true}
+        renderLoading={() => <LoadingAnimation />}
+      />
+
+    </SafeAreaView>
   )
 }

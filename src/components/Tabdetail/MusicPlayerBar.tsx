@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
+import React, { useState, useEffect, useCallback } from 'react';
+import { View, StyleSheet, TouchableOpacity } from 'react-native';
 import TrackPlayer, {
   Capability,
   State,
   usePlaybackState,
   useProgress,
 } from 'react-native-track-player';
+import { useFocusEffect } from '@react-navigation/native';
 import Slider from '@react-native-community/slider';
-import IconSkipBackward from '@/assets/iconSvg/IconSkipBackward'
-import IconSkipForward from '@/assets/iconSvg/IconSkipForward'
-import { Entypo, Feather } from '@expo/vector-icons'
+import IconSkipBackward from '@/assets/iconSvg/IconSkipBackward';
+import IconSkipForward from '@/assets/iconSvg/IconSkipForward';
+import { Feather } from '@expo/vector-icons';
 
 const MusicPlayer: React.FC = () => {
   const playbackState = usePlaybackState();
@@ -17,12 +18,22 @@ const MusicPlayer: React.FC = () => {
 
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
+  useFocusEffect(
+    useCallback(() => {
+      setupPlayer();
+      return () => {
+        TrackPlayer.reset(); // Reset player when leaving the screen
+      };
+    }, [])
+  );
+
   useEffect(() => {
-    setupPlayer();
-    return () => {
-      TrackPlayer.reset(); // Use reset instead of destroy
-    };
-  }, []);
+    if (playbackState === State.Playing) {
+      setIsPlaying(true);
+    } else {
+      setIsPlaying(false);
+    }
+  }, [playbackState]);
 
   const setupPlayer = async () => {
     await TrackPlayer.setupPlayer();
@@ -48,23 +59,24 @@ const MusicPlayer: React.FC = () => {
   };
 
   const togglePlayPause = async () => {
-    if (playbackState === State.Playing) {
+    if (isPlaying) {
       await TrackPlayer.pause();
-      setIsPlaying(false);
     } else {
       await TrackPlayer.play();
-      setIsPlaying(true);
     }
   };
 
   const skipForward = async () => {
-    let newPosition = progress.position + 10;
-    if (newPosition > progress.duration) newPosition = progress.duration;
+    const position = await TrackPlayer.getPosition();
+    const duration = await TrackPlayer.getDuration();
+    let newPosition = position + 10;
+    if (newPosition > duration) newPosition = duration;
     await TrackPlayer.seekTo(newPosition);
   };
 
   const skipBackward = async () => {
-    let newPosition = progress.position - 10;
+    const position = await TrackPlayer.getPosition();
+    let newPosition = position - 10;
     if (newPosition < 0) newPosition = 0;
     await TrackPlayer.seekTo(newPosition);
   };
@@ -79,7 +91,7 @@ const MusicPlayer: React.FC = () => {
         <IconSkipBackward />
       </TouchableOpacity>
       <TouchableOpacity onPress={togglePlayPause} style={styles.button} className="bg-[#0C5FFF] rounded-full">
-        {!isPlaying ? <Feather name="play" size={20} color="#fff" />: <Feather name="pause" size={20} color="#fff" />}
+        {isPlaying ? <Feather name="pause" size={20} color="#fff" /> : <Feather name="play" size={20} color="#fff" />}
       </TouchableOpacity>
       <TouchableOpacity onPress={skipForward} style={styles.button}>
         <IconSkipForward />
@@ -103,9 +115,6 @@ const styles = StyleSheet.create({
   },
   button: {
     padding: 10,
-  },
-  buttonText: {
-    fontSize: 18,
   },
   slider: {
     flex: 1,
