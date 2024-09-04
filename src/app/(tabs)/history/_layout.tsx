@@ -4,18 +4,13 @@ const FavoritesScreenLayout = () => {
   return (
     <Stack
       screenOptions={{
-      headerShown: false,
-    }}
+        headerShown: false,
+      }}
       bottomTabOptions={{
         hidden: true,
       }}
-    >
-      <Stack.Screen
-        name="history"
-        options={{}}
-      />
-    </Stack>
+    ></Stack>
   )
 }
 
-export default FavoritesScreenLayout;
+export default FavoritesScreenLayout

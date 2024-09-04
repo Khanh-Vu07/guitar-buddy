@@ -2,13 +2,12 @@ import { Stack } from 'expo-router'
 
 const FavoritesScreenLayout = () => {
   return (
-    <Stack  screenOptions={{
-      headerShown: false,
-    }}>
-      <Stack.Screen
-        name="home"
-        options={{}}
-      />
+    <Stack
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      {/* <Stack.Screen name="index" options={{}} /> */}
     </Stack>
   )
 }
