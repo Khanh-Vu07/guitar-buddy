@@ -17,13 +17,12 @@ export default function BookmarkDetail() {
         </TouchableOpacity>
         <Text className="font-bold text-xl m-auto">Thử thách</Text>
       </View>
-      <View>
-      </View>
+      <View></View>
       <WebView
         className="w-full h-full"
         originWhitelist={['*']}
         source={{
-          uri: image
+          uri: image,
         }}
         startInLoadingState={true}
         renderLoading={() => <LoadingAnimation />}

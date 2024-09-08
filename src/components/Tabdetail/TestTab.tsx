@@ -1,30 +1,30 @@
-import React, { useState } from 'react';
-import { View, Text, Image, TouchableOpacity, Button } from 'react-native';
+import React, { useState } from 'react'
+import { View, Text, Image, TouchableOpacity, Button } from 'react-native'
 import CustomButton from '@/components/CustomButton'
 
 interface IQuestion {
   data: any
 }
 
-export default function TestTab({data}: IQuestion) {
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedOptionIndex, setSelectedOptionIndex] = useState(null);
-  const [isCorrect, setIsCorrect] = useState(null);
+export default function TestTab({ data }: IQuestion) {
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState(null)
+  const [isCorrect, setIsCorrect] = useState(null)
 
-  const currentQuestion = data.learnPractice.test[currentQuestionIndex];
+  const currentQuestion = data.learnPractice.test[currentQuestionIndex]
 
   const handleOptionPress = (index) => {
-    setSelectedOptionIndex(index);
-    setIsCorrect(index === currentQuestion.correctAnswerIndex);
-  };
+    setSelectedOptionIndex(index)
+    setIsCorrect(index === currentQuestion.correctAnswerIndex)
+  }
 
   const handleNextQuestion = () => {
     if (currentQuestionIndex < data.learnPractice.test.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setSelectedOptionIndex(null); // Reset selected option for next question
-      setIsCorrect(null); // Reset correctness check for next question
+      setCurrentQuestionIndex(currentQuestionIndex + 1)
+      setSelectedOptionIndex(null) // Reset selected option for next question
+      setIsCorrect(null) // Reset correctness check for next question
     }
-  };
+  }
   //
   // const handlePreviousQuestion = () => {
   //   if (currentQuestionIndex > 0) {
@@ -34,22 +34,20 @@ export default function TestTab({data}: IQuestion) {
   //   }
   // };
 
-
   return (
     <View className="relative h-[90%]">
       <View>
-        <Text className="text-base font-semibold">
-          {currentQuestion.question}
-        </Text>
+        <Text className="text-base font-semibold">{currentQuestion.question}</Text>
         <Image
           source={{ uri: currentQuestion.imageUri }}
-          className="w-full h-[150px] mt-2" resizeMode="stretch"
+          className="w-full h-[150px] mt-2"
+          resizeMode="stretch"
         />
         {currentQuestion.options.map((option, index) => {
-          let borderColor = '#D1D5DB'; // Default border color
+          let borderColor = '#D1D5DB' // Default border color
 
           if (selectedOptionIndex === index) {
-            borderColor = isCorrect ? 'green' : 'red'; // Change border color based on correctness
+            borderColor = isCorrect ? 'green' : 'red' // Change border color based on correctness
           }
 
           return (
@@ -60,10 +58,11 @@ export default function TestTab({data}: IQuestion) {
               onPress={() => handleOptionPress(index)}
             >
               <Text className="text-base font-normal">
-                <Text className="font-semibold">{String.fromCharCode(65 + index)}. </Text>{option}
+                <Text className="font-semibold">{String.fromCharCode(65 + index)}. </Text>
+                {option}
               </Text>
             </TouchableOpacity>
-          );
+          )
         })}
       </View>
 
@@ -75,5 +74,5 @@ export default function TestTab({data}: IQuestion) {
         textStyle="text-white"
       />
     </View>
-  );
+  )
 }

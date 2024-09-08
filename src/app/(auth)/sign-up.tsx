@@ -19,14 +19,8 @@ const SignUp = () => {
           <Text className="text-center text-2xl font-bold mt-10">Đăng ký</Text>
           <Text className="mt-2 mb-4 text-center text-gray-500">Đăng ký tài khoản của bạn</Text>
 
-          <TextInput
-            className="border p-3 border-gray-300 rounded-2xl"
-            placeholder="Tên"
-          />
-          <TextInput
-            className="border mt-4 p-3 border-gray-300 rounded-2xl"
-            placeholder="Email"
-          />
+          <TextInput className="border p-3 border-gray-300 rounded-2xl" placeholder="Tên" />
+          <TextInput className="border mt-4 p-3 border-gray-300 rounded-2xl" placeholder="Email" />
           <TextInput
             className="border mt-4 p-3 border-gray-300 rounded-2xl"
             placeholder="Mật khẩu"
@@ -44,7 +38,6 @@ const SignUp = () => {
             containerStyle="w-full mt-7 bg-primary-600 min-h-[48px]"
             textStyle="text-white"
           />
-
         </View>
       </SafeAreaView>
       <View className="w-full bg-white">

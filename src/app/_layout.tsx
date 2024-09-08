@@ -22,8 +22,8 @@ const RootLayout = () => {
     'Poppins-SemiBold': require('@/assets/fonts/Poppins-SemiBold.ttf'),
     'Poppins-Thin': require('@/assets/fonts/Poppins-Thin.ttf'),
   })
-  AppRegistry.registerComponent('appName', () => App);
-  TrackPlayer.registerPlaybackService(() => service);
+  AppRegistry.registerComponent('appName', () => App)
+  TrackPlayer.registerPlaybackService(() => service)
 
   useEffect(() => {
     if (error) throw error

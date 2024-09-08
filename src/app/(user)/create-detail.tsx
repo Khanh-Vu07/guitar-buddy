@@ -13,25 +13,27 @@ export default function CreateDetail() {
   const runFirst = `
       document.getElementsByClassName('page-header').style.display = 'none';
       true; // note: this is required, or you'll sometimes get silent failures
-    `;
+    `
 
   return (
     <SafeAreaView className="bg-white flex-1">
-      <TouchableOpacity onPress={() => router.back()} className="flex pb-2 flex-row mx-4 items-center gap-2">
+      <TouchableOpacity
+        onPress={() => router.back()}
+        className="flex pb-2 flex-row mx-4 items-center gap-2"
+      >
         <AntDesign name="left" size={24} color="black" />
         <Text className="font-semibold text-xl">Trở lại</Text>
       </TouchableOpacity>
       <WebView
         className="w-full h-full"
         source={{
-          uri: item.linkPost
+          uri: item.linkPost,
         }}
         javaScriptEnabled={true}
         injectedJavaScript={runFirst}
         startInLoadingState={true}
         renderLoading={() => <LoadingAnimation />}
       />
-
     </SafeAreaView>
   )
 }

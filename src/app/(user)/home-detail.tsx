@@ -18,10 +18,12 @@ export default function HomeDetail() {
   const params = useLocalSearchParams()
   const { data } = params
   const item = JSON.parse(data)
-  const [linkVideo, setLinkVideo] = useState('https://www.youtube.com/embed/SFpXwAbwP3Q?si=qNz7cs_X2yiRUA2W')
+  const [linkVideo, setLinkVideo] = useState(
+    'https://www.youtube.com/embed/SFpXwAbwP3Q?si=qNz7cs_X2yiRUA2W',
+  )
 
   useEffect(() => {
-    if(item?.videoThumbnail) {
+    if (item?.videoThumbnail) {
       setLinkVideo(item.videoThumbnail)
     }
   }, [item])
@@ -35,8 +37,8 @@ export default function HomeDetail() {
               className="w-full h-full"
               originWhitelist={['*']}
               source={{
-                uri: linkVideo
-            }}
+                uri: linkVideo,
+              }}
               startInLoadingState={true}
               renderLoading={() => <LoadingAnimation />}
             />

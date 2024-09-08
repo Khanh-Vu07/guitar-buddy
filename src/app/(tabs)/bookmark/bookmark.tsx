@@ -14,9 +14,7 @@ const Bookmark = () => {
         showsVerticalScrollIndicator={false}
         horizontal={false}
         data={data}
-        renderItem={(item) => (
-          <ItemChallenge data={item.item} />
-        )}
+        renderItem={(item) => <ItemChallenge data={item.item} />}
       />
     </SafeAreaView>
   )
@@ -24,4 +22,4 @@ const Bookmark = () => {
 
 export default Bookmark
 
-const styles = StyleSheet. create({})
+const styles = StyleSheet.create({})

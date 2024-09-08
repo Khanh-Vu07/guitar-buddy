@@ -6,12 +6,10 @@ import data from '@/data/music.json'
 import ItemHomeHorizontal from '@/components/ItemHomeHorizontal'
 
 export default function Search() {
-  return(
+  return (
     <SafeAreaView className="bg-white h-full relative flex-1">
       <View className="flex-row w-full items-center gap-2 mx-4 flex">
-        <TouchableOpacity
-          onPress={() => router.back()}
-        >
+        <TouchableOpacity onPress={() => router.back()}>
           <AntDesign name="left" size={24} color="black" />
         </TouchableOpacity>
         <TextInput
@@ -26,9 +24,7 @@ export default function Search() {
           showsHorizontalScrollIndicator={false}
           horizontal={false}
           data={data}
-          renderItem={(item) => (
-            <ItemHomeHorizontal data={item.item} pathName="/home-detail" />
-          )}
+          renderItem={(item) => <ItemHomeHorizontal data={item.item} pathName="/home-detail" />}
         />
       </View>
     </SafeAreaView>

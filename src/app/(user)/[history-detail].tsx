@@ -7,16 +7,11 @@ export default function HistoryDetail() {
   const params = useLocalSearchParams()
   const { data } = params
   const item = JSON.parse(data)
-  return(
+  return (
     <View className="bg-white flex-1">
       <View className="relative h-[200px] flex-1">
-        <Image
-          source={{uri: item.thumbnail}}
-          className="w-full h-[200px]" resizeMode="cover" />
-        <TouchableOpacity
-          className="mt-14 ml-4 absolute"
-          onPress={() => router.back()}
-        >
+        <Image source={{ uri: item.thumbnail }} className="w-full h-[200px]" resizeMode="cover" />
+        <TouchableOpacity className="mt-14 ml-4 absolute" onPress={() => router.back()}>
           <AntDesign name="left" size={24} color="#FFFFFF" />
         </TouchableOpacity>
         {/*<View className="flex-row">*/}
@@ -35,8 +30,9 @@ export default function HistoryDetail() {
               <Text key={index} className="mb-1">{`\u2022 ${item}`}</Text>
             ))}
             <Image
-              source={{uri: item.thumbnail}}
-              className="w-full h-[200px] rounded-2xl my-2" resizeMode="cover"
+              source={{ uri: item.thumbnail }}
+              className="w-full h-[200px] rounded-2xl my-2"
+              resizeMode="cover"
             />
             <Text className="font-bold my-2">Học các kiến thức nhạc lý cơ bản</Text>
             {item.detailLearn.map((item: string, index: number) => (
@@ -50,7 +46,6 @@ export default function HistoryDetail() {
             {/*/>*/}
           </View>
         </ScrollView>
-
       </View>
     </View>
   )

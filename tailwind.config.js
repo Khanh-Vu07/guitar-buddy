@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         primary: {
           100: '#161622',
-          600: '#0C5FFF'
+          600: '#0C5FFF',
         },
         secondary: {
           DEFAULT: '#FF9C01',
@@ -20,7 +20,7 @@ module.exports = {
         },
         gray: {
           100: '#CDCDE0',
-          300: '#D1D5DB'
+          300: '#D1D5DB',
         },
       },
       fontFamily: {

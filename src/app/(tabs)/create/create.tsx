@@ -14,9 +14,7 @@ const Create = () => {
         showsVerticalScrollIndicator={false}
         horizontal={false}
         data={data}
-        renderItem={(item) => (
-          <ItemPost data={item.item} />
-        )}
+        renderItem={(item) => <ItemPost data={item.item} />}
       />
     </SafeAreaView>
   )

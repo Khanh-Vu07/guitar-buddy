@@ -31,5 +31,5 @@ export default {
   eye,
   challenge,
   post,
-  history
+  history,
 }

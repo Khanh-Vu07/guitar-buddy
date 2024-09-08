@@ -25,7 +25,8 @@
     "learnPractice": {
       "exercise": {
         "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
-        "soundLink": "https://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3"
+        "soundLink": "https://audio.jukehost.co.uk/vTRYaTEbpaYRCxiWGgL2S91mnOuMKfLw",
+        "trackId": 1
       },
       "test": [
         {
@@ -69,7 +70,8 @@
     "learnPractice": {
       "exercise": {
         "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
-        "soundLink": "https://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3"
+        "soundLink": "https://audio.jukehost.co.uk/priWy2vYsWODmQiM6KevNYVLpPJGPZGd",
+        "trackId": 2
       },
       "test": [
         {
@@ -113,7 +115,8 @@
     "learnPractice": {
       "exercise": {
         "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
-        "soundLink": "https://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3"
+        "soundLink": "https://audio.jukehost.co.uk/vTRYaTEbpaYRCxiWGgL2S91mnOuMKfLw",
+        "trackId": 3
       },
       "test": [
         {

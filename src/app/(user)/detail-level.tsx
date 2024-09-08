@@ -9,16 +9,14 @@ export default function DetailLevel() {
   const params = useLocalSearchParams()
   const { title } = params
 
-  return(
+  return (
     <SafeAreaView className="bg-white h-full relative flex-1">
       <View className="flex-row flex justify-between items-center pb-2 mx-4">
-        <TouchableOpacity
-          onPress={() => router.back()}
-        >
+        <TouchableOpacity onPress={() => router.back()}>
           <AntDesign name="left" size={24} color="black" />
         </TouchableOpacity>
-        <Text className="font-medium text-[#1F2937] text-xl">{title ?? ""}</Text>
-        <TouchableOpacity  onPress={() => router.push('/search')}>
+        <Text className="font-medium text-[#1F2937] text-xl">{title ?? ''}</Text>
+        <TouchableOpacity onPress={() => router.push('/search')}>
           <EvilIcons name="search" size={30} color="#6B7280" />
         </TouchableOpacity>
       </View>
@@ -28,9 +26,7 @@ export default function DetailLevel() {
           showsHorizontalScrollIndicator={false}
           horizontal={false}
           data={data}
-          renderItem={(item) => (
-            <ItemHomeHorizontal data={item.item} pathName="/home-detail" />
-          )}
+          renderItem={(item) => <ItemHomeHorizontal data={item.item} pathName="/home-detail" />}
         />
       </View>
     </SafeAreaView>
