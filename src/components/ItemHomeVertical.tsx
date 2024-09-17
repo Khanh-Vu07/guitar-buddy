@@ -1,4 +1,4 @@
-import { Image, ImageBackground, Text, TouchableOpacity, View } from 'react-native'
+import { Image, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import RenderTagComponent from '@/components/RenderTag'
 import { router } from 'expo-router'

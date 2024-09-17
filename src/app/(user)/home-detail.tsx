@@ -1,12 +1,4 @@
-import {
-  Dimensions,
-  Image,
-  SafeAreaView,
-  ScrollView,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native'
+import { SafeAreaView, ScrollView, Text, TouchableOpacity, View } from 'react-native'
 import { AntDesign } from '@expo/vector-icons'
 import { router, useLocalSearchParams } from 'expo-router'
 import React, { useEffect, useState } from 'react'

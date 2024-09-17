@@ -14,7 +14,7 @@ interface ItemHomeAbsoluteProps {
 export default function ItemHomeAbsolute({ data, pathName }: ItemHomeAbsoluteProps) {
   return (
     <TouchableOpacity
-      className="relative mr-2"
+      className="relative mr-2 bg-white"
       onPress={() =>
         router.push({
           pathname: pathName ?? '',
@@ -38,7 +38,7 @@ export default function ItemHomeAbsolute({ data, pathName }: ItemHomeAbsolutePro
       <Text numberOfLines={1} className="text-white max-w-[80%] absolute bottom-2 left-4 z-10">
         {data.shortDescription}
       </Text>
-      <View className="w-full h-[40%] bg-black opacity-20 absolute bottom-0" />
+      <View className="w-full h-[40%] bg-black/20 absolute bottom-0 rounded-b-2xl" />
     </TouchableOpacity>
   )
 }

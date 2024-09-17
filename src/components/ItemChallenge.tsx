@@ -16,7 +16,7 @@ export default function ItemChallenge({ data }: IItemChallengeProps) {
         router.push({
           pathname: '/bookmark-detail',
           params: {
-            image: data.imageMusic,
+            id: data.id,
           },
         })
       }

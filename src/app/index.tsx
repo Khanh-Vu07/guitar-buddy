@@ -1,15 +1,11 @@
-import CustomButton from '@/components/CustomButton'
-import { images } from '@/constants'
-import { ERouteTable } from '@/constants/route-table'
 import { useAppSelector } from '@/redux'
-import { Redirect, router } from 'expo-router'
-import { StatusBar } from 'expo-status-bar'
-import { Image, ScrollView, Text, View } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { Redirect } from 'expo-router'
+import { LogBox, View } from 'react-native'
+
+LogBox.ignoreAllLogs()
 
 export default function App() {
   const user = useAppSelector((state) => state.user)
-  console.log(user)
 
   return (
     <>

@@ -9,7 +9,7 @@ interface IHeaderHome {
 
 export default function HeaderHome({ title }: IHeaderHome) {
   return (
-    <View className="flex-row flex justify-between items-center pb-2">
+    <View className="flex-row flex justify-between items-center pb-2 px-4">
       <Image
         source={images.profile}
         className="w-[40px] h-[40px] rounded-full"

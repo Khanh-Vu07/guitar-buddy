@@ -1,16 +1,42 @@
 [
   {
     "id": "1",
-    "name": "Đàn gà con",
-    "author": "Phạm Hồ",
+    "name": "Maybe Love",
+    "author": "Yiruma",
     "imageMusic": "https://vnguitar.net/attachments/dan-ga-con-piano-png.17493/",
-    "author_avatar": "https://www.thivien.net/attachment/-ppcy-NwEgOXXVu6L8-DqA.1139129030.jpg"
+    "author_avatar": "https://i.ytimg.com/vi/0RX6Psow_kY/maxresdefault.jpg",
+    "video": "https://www.youtube.com/embed/hvgyob-RuNE?si=ae7xx07bpeWgRKwI"
   },
   {
     "id": "2",
-    "name": "Kìa con bướm vàng",
-    "author": "Nguyên Hà",
+    "name": "River flows in you",
+    "author": "Yiruma",
     "imageMusic": "https://cflymusic.com/wp-content/uploads/2024/02/sheet-nhac-kia-con-buom-vang.jpeg",
-    "author_avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8acGjR_X9-2ul4CxnOJ9Gbqb5w4zlqw5dfw&s"
+    "author_avatar": "https://i1.sndcdn.com/artworks-FF5uF3qkLHYtYv24-pCtVTA-t500x500.jpg",
+    "video": "https://www.youtube.com/embed/bUmf--El2Uo?si=I1zllSFAs9BDaKn3"
+  },
+  {
+    "id": "3",
+    "name": "Canon in D",
+    "author": "Johann Sebastian Bach",
+    "imageMusic": "https://cflymusic.com/wp-content/uploads/2024/02/sheet-nhac-kia-con-buom-vang.jpeg",
+    "author_avatar": "https://i.ytimg.com/vi/QmTjzzMXl7s/maxresdefault.jpg",
+    "video": "https://www.youtube.com/embed/r0C_yNXY_OM?si=sUd3bGfQu6_uUJx2"
+  },
+  {
+    "id": "4",
+    "name": "Sonata No. 12 in F Major K. 332 (1st movement)",
+    "author": "Mozart",
+    "imageMusic": "https://cflymusic.com/wp-content/uploads/2024/02/sheet-nhac-kia-con-buom-vang.jpeg",
+    "author_avatar": "https://source.boomplaymusic.com/group10/M00/07/25/6a8c975eff964288a7bdb8d3e2b3b5f4H4098W4098_464_464.jpg",
+    "video": "https://www.youtube.com/embed/qcWvF87G9v8?si=uZow3tHlTGd4_7Lf"
+  },
+  {
+    "id": "5",
+    "name": "Fantaisie-Impromptu in C sharp minor Op. 66",
+    "author": "Frédéric Chopin",
+    "imageMusic": "https://cflymusic.com/wp-content/uploads/2024/02/sheet-nhac-kia-con-buom-vang.jpeg",
+    "author_avatar": "https://m.media-amazon.com/images/I/51tA9pZEkVL.jpg",
+    "video": "https://www.youtube.com/embed/69NVJAcIHLI?si=nxa5dU9C0u-2r_x9"
   }
 ]

@@ -7,10 +7,10 @@ import ItemChallenge from '@/components/ItemChallenge'
 
 const Bookmark = () => {
   return (
-    <SafeAreaView className="px-4 bg-white pb-6 flex-1">
+    <SafeAreaView className="bg-white pb-6 flex-1">
       <HeaderHome title="Thử thách" />
       <FlatList
-        className="mt-4 flex-1"
+        className="mt-4 flex-1 px-4"
         showsVerticalScrollIndicator={false}
         horizontal={false}
         data={data}

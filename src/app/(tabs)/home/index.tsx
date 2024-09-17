@@ -1,4 +1,4 @@
-import { FlatList, ScrollView, StyleSheet } from 'react-native'
+import { FlatList, ScrollView, StyleSheet, View } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import HeaderHome from '@/app/component/HeaderHome'
@@ -10,17 +10,23 @@ import ItemHomeVertical from '@/components/ItemHomeVertical'
 import ItemHomeHorizontal from '@/components/ItemHomeHorizontal'
 import { router } from 'expo-router'
 
+const defaults = [data[4], data[6], data[8], data[9]]
+const easyLectures = data.filter((item) => item.level === '1')
+const mediumLectures = data.filter((item) => item.level === '2')
+const hardLectures = data.filter((item) => item.level === '3')
+
 const Home = () => {
   return (
-    <SafeAreaView className="px-4 bg-white pb-6">
+    <SafeAreaView className="bg-white pb-6">
       <HeaderHome title="Home" />
       <ScrollView showsVerticalScrollIndicator={false}>
         <FlatList
-          className="mt-4"
+          className="mt-4 px-4"
           showsHorizontalScrollIndicator={false}
           horizontal
-          data={data}
+          data={defaults}
           renderItem={(item) => <ItemHomeAbsolute data={item.item} pathName="/home-detail" />}
+          ListFooterComponent={<View className="w-8" />}
         />
         <TitleHome
           title="Cấp Độ Dễ"
@@ -34,11 +40,12 @@ const Home = () => {
           }
         />
         <FlatList
-          className="mt-4"
+          className="mt-4 px-4"
           showsHorizontalScrollIndicator={false}
           horizontal
-          data={data}
+          data={easyLectures}
           renderItem={(item) => <ItemHomeVertical data={item.item} pathName="/home-detail" />}
+          ListFooterComponent={<View className="w-8" />}
         />
         <TitleHome
           title="Cấp Độ Trung Bình"
@@ -52,11 +59,12 @@ const Home = () => {
           }
         />
         <FlatList
-          className="mt-4"
+          className="mt-4 px-4"
           showsHorizontalScrollIndicator={false}
           horizontal
-          data={data}
+          data={mediumLectures}
           renderItem={(item) => <ItemHomeVertical data={item.item} pathName="/home-detail" />}
+          ListFooterComponent={<View className="w-8" />}
         />
         <TitleHome
           title="Cấp Độ Khó"
@@ -70,30 +78,12 @@ const Home = () => {
           }
         />
         <FlatList
-          className="mt-4"
+          className="mt-4 px-4"
           showsHorizontalScrollIndicator={false}
           horizontal
-          data={data}
+          data={hardLectures}
           renderItem={(item) => <ItemHomeVertical data={item.item} pathName="/home-detail" />}
-        />
-        <TitleHome
-          title="Tất Cả Cấp Độ"
-          onPress={() =>
-            router.push({
-              pathname: '/detail-level',
-              params: {
-                title: 'Tất Cả Cấp Độ',
-              },
-            })
-          }
-        />
-
-        <FlatList
-          className="mt-4"
-          showsHorizontalScrollIndicator={false}
-          horizontal={false}
-          data={data}
-          renderItem={(item) => <ItemHomeHorizontal data={item.item} pathName="/home-detail" />}
+          ListFooterComponent={<View className="w-8" />}
         />
       </ScrollView>
     </SafeAreaView>
