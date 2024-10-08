@@ -5,15 +5,10 @@ import { router } from 'expo-router'
 
 interface IItemHomeHorizontalProps {
   data: any
-  isHistory?: boolean
   pathName?: string
 }
 
-export default function ItemHomeHorizontal({
-  data,
-  isHistory,
-  pathName,
-}: IItemHomeHorizontalProps) {
+export default function ItemHomeHorizontal({ data, pathName }: IItemHomeHorizontalProps) {
   return (
     <TouchableOpacity
       className="flex mb-2 flex-row items-center"
@@ -32,17 +27,15 @@ export default function ItemHomeHorizontal({
           className="w-[96px] h-[96px] rounded-2xl"
           resizeMode="cover"
         />
-        {!isHistory ? (
-          <View className="absolute bottom-2 left-2">
-            <RenderTagComponent level={data.level} />
-          </View>
-        ) : null}
+        <View className="absolute bottom-2 left-2">
+          <RenderTagComponent level={data.level} />
+        </View>
       </View>
-      <View>
-        <Text numberOfLines={2} className="font-medium max-w-[80%] ml-2 mt-2">
+      <View className="flex-1 px-2">
+        <Text numberOfLines={2} className="font-medium w-full ml-2 mt-2">
           {data.name}
         </Text>
-        <Text numberOfLines={2} className="font-light max-w-[80%] ml-2 mt-2">
+        <Text numberOfLines={2} className="font-light w-full ml-2 mt-2">
           {data.shortDescription}
         </Text>
       </View>

@@ -7,7 +7,9 @@ import React from 'react'
 
 export default function DetailLevel() {
   const params = useLocalSearchParams()
-  const { title } = params
+  const { title, level } = params
+
+  const lessons = data.filter((item) => item.level === level)
 
   return (
     <SafeAreaView className="bg-white h-full relative flex-1">
@@ -23,10 +25,11 @@ export default function DetailLevel() {
       <View className="mx-4">
         <FlatList
           className="mt-4"
-          showsHorizontalScrollIndicator={false}
+          showsVerticalScrollIndicator={false}
           horizontal={false}
-          data={data}
+          data={lessons}
           renderItem={(item) => <ItemHomeHorizontal data={item.item} pathName="/home-detail" />}
+          ListFooterComponent={<View className="h-12" />}
         />
       </View>
     </SafeAreaView>

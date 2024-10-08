@@ -9,7 +9,6 @@ const TabsLayout = () => {
           headerShown: false,
         }}
       >
-        <Stack.Screen name="[history-detail]" options={{}} />
         <Stack.Screen name="bookmark-detail" options={{}} />
         <Stack.Screen name="change-pasword" options={{}} />
         <Stack.Screen name="edit-profile" options={{}} />

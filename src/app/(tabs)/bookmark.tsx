@@ -1,4 +1,4 @@
-import { FlatList, StyleSheet } from 'react-native'
+import { FlatList } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import HeaderHome from '@/app/component/HeaderHome'
@@ -21,5 +21,3 @@ const Bookmark = () => {
 }
 
 export default Bookmark
-
-const styles = StyleSheet.create({})

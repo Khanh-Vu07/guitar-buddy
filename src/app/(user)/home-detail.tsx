@@ -2,14 +2,13 @@ import { SafeAreaView, ScrollView, Text, TouchableOpacity, View } from 'react-na
 import { AntDesign } from '@expo/vector-icons'
 import { router, useLocalSearchParams } from 'expo-router'
 import React, { useEffect, useState } from 'react'
-import CustomButton from '@/components/CustomButton'
 import { WebView } from 'react-native-webview'
 import { LoadingAnimation } from '@/app/component/LoadingAnimation'
 
 export default function HomeDetail() {
   const params = useLocalSearchParams()
   const { data } = params
-  const item = JSON.parse(data)
+  const item = JSON.parse(data as string)
   const [linkVideo, setLinkVideo] = useState(
     'https://www.youtube.com/embed/SFpXwAbwP3Q?si=qNz7cs_X2yiRUA2W',
   )
@@ -57,7 +56,7 @@ export default function HomeDetail() {
               {item.detailLearn.map((item: string, index: number) => (
                 <Text key={index} className="mb-1">{`\u2022 ${item}`}</Text>
               ))}
-              <CustomButton
+              {/* <CustomButton
                 title="Thực hành"
                 onPress={() =>
                   router.push({
@@ -69,7 +68,7 @@ export default function HomeDetail() {
                 }
                 containerStyle="w-full mt-7 bg-primary-600 min-h-[48px] mb-10"
                 textStyle="text-white"
-              />
+              /> */}
             </View>
           </ScrollView>
         </View>

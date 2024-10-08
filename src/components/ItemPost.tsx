@@ -9,26 +9,26 @@ interface IItemPostProps {
 export default function ItemPost({ data }: IItemPostProps) {
   return (
     <TouchableOpacity
-      className="flex mb-2 flex-row items-center"
+      className="flex mb-2 flex-row items-center space-x-3"
       onPress={() =>
         router.push({
           pathname: '/create-detail',
           params: {
-            data: JSON.stringify(data),
+            id: data.id,
           },
         })
       }
     >
       <Image
         source={{ uri: data.banner }}
-        className="w-[96px] h-[96px] rounded-2xl"
+        className="w-[80px] h-[80px] rounded-2xl"
         resizeMode="cover"
       />
-      <View>
-        <Text className="font-medium ml-2 mt-2 max-w-[80%]" numberOfLines={2}>
+      <View className="flex-1 space-y-3">
+        <Text className="font-medium w-full" numberOfLines={2}>
           {data.name}
         </Text>
-        <Text className="font-light ml-2 mt-2 max-w-[80%]" numberOfLines={2}>
+        <Text className="font-light w-full" numberOfLines={2}>
           {data.shortDescription}
         </Text>
       </View>

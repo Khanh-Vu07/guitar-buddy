@@ -27,15 +27,19 @@ export default function EditProfile() {
         </View>
         <TextInput
           className="border mt-4 h-[50px] p-3 border-gray-300 rounded-2xl"
-          placeholder="Tên của bạn"
+          placeholder="Email"
+          value="tuanquang01@gmail.com"
+          editable={false}
         />
         <TextInput
           className="border mt-4 h-[50px] p-3 border-gray-300 rounded-2xl"
-          placeholder="Email"
+          placeholder="Tên của bạn"
+          value="Tuan Quang"
         />
         <TextInput
           className="border mt-4 h-[50px] p-3 border-gray-300 rounded-2xl"
           placeholder="Số điện thoại"
+          value="0123456789"
         />
         <CustomButton
           title="Lưu"

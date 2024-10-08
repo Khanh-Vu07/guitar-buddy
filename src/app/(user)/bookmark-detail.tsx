@@ -9,7 +9,6 @@ import data from '@/data/challenge.json'
 export default function BookmarkDetail() {
   const { id } = useLocalSearchParams()
   const challenge = data.find((item) => item.id === id)
-  console.log(data)
 
   return (
     <SafeAreaView className="px-4 bg-white pb-6 flex-1">
@@ -35,7 +34,7 @@ export default function BookmarkDetail() {
           className="w-full"
           originWhitelist={['*']}
           source={{
-            uri: challenge?.video,
+            uri: challenge?.video || '',
           }}
           startInLoadingState={true}
           renderLoading={() => <LoadingAnimation />}

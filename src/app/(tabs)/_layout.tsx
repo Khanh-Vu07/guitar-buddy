@@ -51,31 +51,20 @@ const TabsLayout = () => {
         <Tabs.Screen
           name="bookmark"
           options={{
-            title: 'Bookmark',
             tabBarIcon: (props) => <TabIcon name="" icon={icons.challenge} {...props} />,
           }}
         />
 
         <Tabs.Screen
-          name="create"
+          name="posts"
           options={{
-            title: 'Create',
             tabBarIcon: (props) => <TabIcon name="" icon={icons.post} {...props} />,
-          }}
-        />
-
-        <Tabs.Screen
-          name="history"
-          options={{
-            title: 'History',
-            tabBarIcon: (props) => <TabIcon name="" icon={icons.history} {...props} />,
           }}
         />
 
         <Tabs.Screen
           name="profile"
           options={{
-            title: 'Profile',
             tabBarIcon: (props) => <TabIcon name="" icon={icons.profile} {...props} />,
           }}
         />

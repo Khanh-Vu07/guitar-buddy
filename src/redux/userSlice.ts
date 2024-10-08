@@ -1,26 +1,29 @@
+import { UserProfile } from '@/services/users'
 import { createSlice } from '@reduxjs/toolkit'
-
-export interface UserProfile {
-  email: string
-}
+import { Session } from '@supabase/supabase-js'
 
 type UserState = {
-  user: UserProfile | null
+  data: {
+    session: Session | null
+    profile?: UserProfile
+  }
 }
 
 const initialState: UserState = {
-  user: null,
+  data: {
+    session: null,
+  },
 }
 
 const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    setUser: (state) => {
-      state.user = { email: 'admin@gmail.com' }
+    setUser: (state, action) => {
+      state.data = { ...state.data, ...action.payload }
     },
     removeUser: (state) => {
-      state.user = null
+      state.data = initialState.data
     },
   },
 })
