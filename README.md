@@ -1,4 +1,4 @@
-<img src="https://bocorolulpdyyqsfyaux.supabase.co/storage/v1/object/public/social_media/demo/0_logo.jpg?t=2024-10-10T06%3A55%3A10.154Z" width="100" height="100">
+<img src="https://github.com/tuanna-kite/Piano-Pulse/blob/main/demo/logo.png" width="100" height="100">
 
 # **Piano Pulse Application**
 
@@ -7,13 +7,13 @@ Piano Pulse is a comprehensive app designed to help users of all skill levels—
 ## Key Features
 
 - **User Authentication**: Register and log in using your email and password for secure access to personalized content.
-![alt text](https://github.com/tuanna-kite/SciRoom/blob/main/demo/1.png?raw=true)
+![alt text](https://github.com/tuanna-kite/Piano-Pulse/blob/main/demo/demo1.png?raw=true)
 
 - **Video Lessons**: Access high-quality video lessons, each accompanied by a detailed description and clear learning objectives.
 
   - **Lesson Levels**: Lessons are categorized into three levels: Beginner, Intermediate, and Advanced, allowing users to choose content that matches their skill level.
 
-![alt text](https://github.com/tuanna-kite/SciRoom/blob/main/demo/1.png?raw=true)
+![alt text](https://github.com/tuanna-kite/Piano-Pulse/blob/main/demo/demo2.png?raw=true)
 
 - **Piano Challenges**: Engage in challenges that feature world-renowned musical pieces. Sample videos are provided to demonstrate how to perform each piece, with a focus on effective finger placement and technique.
 
@@ -21,11 +21,11 @@ Piano Pulse is a comprehensive app designed to help users of all skill levels—
 
 - **Personalized Content**: All educational materials are handpicked, compiled, and created by the app developer to ensure quality and relevance.
 
-![alt text](https://github.com/tuanna-kite/SciRoom/blob/main/demo/1.png?raw=true)
+![alt text](https://github.com/tuanna-kite/Piano-Pulse/blob/main/demo/demo3.png?raw=true)
 
 - **User Profile Management**: Users can update their profiles, upload avatars, and change passwords with ease, providing a customizable experience.
 
-![alt text](https://github.com/tuanna-kite/SciRoom/blob/main/demo/1.png?raw=true)
+![alt text](https://github.com/tuanna-kite/Piano-Pulse/blob/main/demo/demo4.png?raw=true)
 
 ## Technology Stack
 
