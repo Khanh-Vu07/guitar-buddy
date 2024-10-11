@@ -2,13 +2,13 @@ import { Alert, Text, View } from 'react-native'
 import { useState } from 'react'
 import BackButton from '@/components/ui/BackButton'
 import Input from '@/components/ui/Input'
+import ScreenWrapper from '@/components/ScreenWrapper'
 import { StatusBar } from 'expo-status-bar'
 import { Icon } from '@/components/ui/Icon'
 import Button from '@/components/ui/Button'
 import { router } from 'expo-router'
 import { ERouteTable } from '@/constants/route-table'
 import { supabase } from '@/lib/supabase'
-import ScreenWrapper from '@/components/ScreenWrapper'
 
 const styles = {
   title: 'text-4xl text-gray-800 font-psemibold',
@@ -51,8 +51,8 @@ const SignUp = () => {
       if (error) {
         throw error
       }
-
-      // router.replace(ERouteTable.HOME)
+      Alert.alert('Sign Up', 'Account created successfully. Please login to continue.')
+      router.replace(ERouteTable.SIGIN_IN)
     } catch (error) {
       console.error(error)
       Alert.alert('Error', 'Something went wrong!')

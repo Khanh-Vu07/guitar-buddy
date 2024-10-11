@@ -10,7 +10,7 @@ export default function TitleHome({ title, onPress }: ITitleHomeProps) {
     <View className="flex-row flex justify-between py-4 items-center px-4">
       <Text className="text-xl font-bold text-primary-600">{title}</Text>
       <TouchableOpacity onPress={onPress}>
-        <Text className="text-gray-500">Xem tất cả</Text>
+        <Text className="text-gray-500">View All</Text>
       </TouchableOpacity>
     </View>
   )

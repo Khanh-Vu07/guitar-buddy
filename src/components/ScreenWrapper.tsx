@@ -18,7 +18,7 @@ const ScreenWrapper = ({
   statusBar = 'dark',
 }: Props) => {
   const { top, bottom } = useSafeAreaInsets()
-  const paddingTop = top > 0 ? top + 5 : 30
+  const paddingTop = top > 0 ? top + 12 : 30
   const paddingBottom = safeBottom ? bottom + 5 : 0
 
   return (

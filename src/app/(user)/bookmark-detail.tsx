@@ -1,22 +1,23 @@
-import { Image, SafeAreaView, Text, TouchableOpacity, View } from 'react-native'
+import { Image, Text, TouchableOpacity, View } from 'react-native'
 import { router, useLocalSearchParams } from 'expo-router'
 import React from 'react'
 import { AntDesign } from '@expo/vector-icons'
 import { WebView } from 'react-native-webview'
 import { LoadingAnimation } from '@/app/component/LoadingAnimation'
 import data from '@/data/challenge.json'
+import ScreenWrapper from '@/components/ScreenWrapper'
 
 export default function BookmarkDetail() {
   const { id } = useLocalSearchParams()
   const challenge = data.find((item) => item.id === id)
 
   return (
-    <SafeAreaView className="px-4 bg-white pb-6 flex-1">
+    <ScreenWrapper bg="white">
       <View className="flex-row flex items-center pb-2 relative mb-8 mx-4">
         <TouchableOpacity className="w-10" onPress={() => router.back()}>
           <AntDesign name="left" size={24} color="black" />
         </TouchableOpacity>
-        <Text className="font-bold text-xl m-auto">Thử thách</Text>
+        <Text className="font-bold text-xl m-auto">Challenge</Text>
         <View className="w-10" />
       </View>
       <View className="flex-row items-center space-x-3 mb-8 px-2">
@@ -40,6 +41,6 @@ export default function BookmarkDetail() {
           renderLoading={() => <LoadingAnimation />}
         />
       </View>
-    </SafeAreaView>
+    </ScreenWrapper>
   )
 }

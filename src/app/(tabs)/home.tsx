@@ -1,21 +1,21 @@
 import { FlatList, ScrollView, View } from 'react-native'
 import React from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
 import HeaderHome from '@/app/component/HeaderHome'
 import data from '../../data/music.json'
 import ItemHomeAbsolute from '@/components/ItemHomeAbsolute'
 import TitleHome from '@/components/TitleHome'
 import ItemHomeVertical from '@/components/ItemHomeVertical'
 import { router } from 'expo-router'
+import ScreenWrapper from '@/components/ScreenWrapper'
 
-const defaults = [data[4], data[6], data[8], data[9]]
+const defaults = [data[1], data[6], data[8], data[9]]
 const easyLectures = data.filter((item) => item.level === '1')
 const mediumLectures = data.filter((item) => item.level === '2')
 const hardLectures = data.filter((item) => item.level === '3')
 
 const Home = () => {
   return (
-    <SafeAreaView className="bg-white pb-6">
+    <ScreenWrapper bg="white">
       <HeaderHome />
       <ScrollView showsVerticalScrollIndicator={false}>
         <FlatList
@@ -27,12 +27,12 @@ const Home = () => {
           ListFooterComponent={<View className="w-8" />}
         />
         <TitleHome
-          title="Cấp Độ Dễ"
+          title="Beginner"
           onPress={() =>
             router.push({
               pathname: '/detail-level',
               params: {
-                title: 'Cấp Độ Dễ',
+                title: 'Beginner',
                 level: '1',
               },
             })
@@ -47,12 +47,12 @@ const Home = () => {
           ListFooterComponent={<View className="w-8" />}
         />
         <TitleHome
-          title="Cấp Độ Trung Bình"
+          title="Intermediate"
           onPress={() =>
             router.push({
               pathname: '/detail-level',
               params: {
-                title: 'Cấp Độ Trung Bình',
+                title: 'Intermediate',
                 level: '2',
               },
             })
@@ -67,12 +67,12 @@ const Home = () => {
           ListFooterComponent={<View className="w-8" />}
         />
         <TitleHome
-          title="Cấp Độ Khó"
+          title="Advanced"
           onPress={() =>
             router.push({
               pathname: '/detail-level',
               params: {
-                title: 'Cấp Độ Khó',
+                title: 'Advanced',
                 level: '3',
               },
             })
@@ -87,7 +87,7 @@ const Home = () => {
           ListFooterComponent={<View className="w-8" />}
         />
       </ScrollView>
-    </SafeAreaView>
+    </ScreenWrapper>
   )
 }
 

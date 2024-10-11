@@ -16,6 +16,7 @@ import { useAppSelector } from '@/redux'
 import Avatar from '@/components/ui/Avatar'
 import colors from 'theme/color'
 import { supabase } from '@/lib/supabase'
+import ScreenWrapper from '@/components/ScreenWrapper'
 
 const Profile = () => {
   const [activeNotify, setActiveNotify] = useState<boolean>(false)
@@ -44,11 +45,10 @@ const Profile = () => {
   }
 
   return (
-    <SafeAreaView className="px-4 bg-white pb-6 flex-1">
-      <View className="flex-row flex justify-center items-center pb-2 border-b border-b-[#D1D5DB]">
-        <Text className="font-bold text-xl">Thông tin</Text>
-      </View>
-
+    <ScreenWrapper bg="white">
+      {/* <View className="flex-row flex justify-center items-center pb-2 border-b border-b-[#D1D5DB]">
+        <Text className="font-bold text-xl">Information</Text>
+      </View> */}
       <View className="mx-4 mt-[28px]">
         <View className="flex flex-col m-auto items-center">
           <Avatar size="lg" uri={profile?.image} />
@@ -60,7 +60,7 @@ const Profile = () => {
         >
           <View className="flex flex-row gap-2 items-center">
             <Image source={images.iconProfile} className="w-[48px] h-[48px]" resizeMode="cover" />
-            <Text className="font-bold text-base">Thông tin</Text>
+            <Text className="font-bold text-base">Profile</Text>
           </View>
           <AntDesign name="right" size={20} color="#6B7280" />
         </TouchableOpacity>
@@ -74,7 +74,7 @@ const Profile = () => {
               className="w-[48px] h-[48px]"
               resizeMode="cover"
             />
-            <Text className="font-bold text-base">Đổi mật khẩu</Text>
+            <Text className="font-bold text-base">Change Password</Text>
           </View>
           <AntDesign name="right" size={20} color="#6B7280" />
         </TouchableOpacity>
@@ -85,7 +85,7 @@ const Profile = () => {
               className="w-[48px] h-[48px]"
               resizeMode="cover"
             />
-            <Text className="font-bold text-base">Thông báo</Text>
+            <Text className="font-bold text-base">Notification</Text>
           </View>
           <Switch value={activeNotify} onChange={() => setActiveNotify(!activeNotify)} />
         </View>
@@ -95,11 +95,11 @@ const Profile = () => {
         >
           <View className="flex flex-row gap-2 items-center">
             <Image source={images.iconLogout} className="w-[48px] h-[48px]" resizeMode="cover" />
-            <Text className="font-bold text-base">Đăng xuất</Text>
+            <Text className="font-bold text-base">Log Out</Text>
           </View>
         </TouchableOpacity>
       </View>
-    </SafeAreaView>
+    </ScreenWrapper>
   )
 }
 

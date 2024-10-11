@@ -1,47 +1,66 @@
-import {
-  Image,
-  TextInput,
-  View,
-  Text,
-  TouchableOpacity,
-  Alert,
-  ActivityIndicator,
-} from 'react-native'
-import React, { useState } from 'react'
+import { Alert, Text, View } from 'react-native'
+import { useState } from 'react'
+import BackButton from '@/components/ui/BackButton'
+import Input from '@/components/ui/Input'
+import ScreenWrapper from '@/components/ScreenWrapper'
+import { StatusBar } from 'expo-status-bar'
+import { Icon } from '@/components/ui/Icon'
+import Button from '@/components/ui/Button'
 import { router } from 'expo-router'
 import { ERouteTable } from '@/constants/route-table'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import CustomButton from '@/components/CustomButton'
 import { supabase } from '@/lib/supabase'
-import colors from 'theme/color'
+import { useAppDispatch } from '@/redux'
+import { getUserData } from '@/services/users'
+import { setUser } from '@/redux/userSlice'
+import { Session } from '@supabase/supabase-js'
+
+const styles = {
+  title: 'text-4xl text-gray-800 font-psemibold',
+  formContainer: '',
+}
 
 const SignIn = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
+  const dispatch = useAppDispatch()
 
-  const [userData, setUserData] = useState({
-    email: 'tuanna@gmail.com',
-    password: 'tuan1234',
-  })
+  async function updateProfileState(session: Session) {
+    try {
+      const res = await getUserData(session.user.id)
+      if (res.success) {
+        dispatch(setUser({ session, profile: res.data }))
+        router.replace(ERouteTable.HOME)
+        return { session, profile: res.data }
+      } else {
+        Alert.alert('getUserData', res.message)
+      }
+    } catch (error: any) {
+      console.error(error)
+      Alert.alert('Error', error)
+    }
+  }
 
   const onSubmit = async () => {
     try {
       setLoading(true)
       const formData = {
-        email: userData.email.toLowerCase().trim(),
-        password: userData.password.trim(),
+        email: email.toLowerCase().trim(),
+        password: password.trim(),
       }
       if (formData.email.length === 0 || formData.password.length === 0) {
         return Alert.alert('Error', 'Please fill all the fields!')
       }
 
-      const { error } = await supabase.auth.signInWithPassword({
+      const { error, data } = await supabase.auth.signInWithPassword({
         email: formData.email,
         password: formData.password,
       })
 
       if (error) {
-        Alert.alert('Login', 'Wrong email or password.', [{ text: 'OK' }])
+        throw error
       }
+      await updateProfileState(data!.session)
     } catch (error) {
       console.error(error)
       Alert.alert('Login', 'There was an error logging in', [{ text: 'OK' }])
@@ -50,64 +69,53 @@ const SignIn = () => {
     }
   }
 
-  if (loading) {
-    return (
-      <View className="flex-1 justify-center items-center bg-white">
-        <ActivityIndicator size="large" color={colors.primary[600]} />
-      </View>
-    )
-  }
-
   return (
-    <>
-      <SafeAreaView className="bg-white h-full relative flex-1">
-        <View className="mx-6 mt-16">
-          <Image
-            source={require('@/assets/logo.png')}
-            className="h-[80px] w-[80px] mt-10 mx-auto rounded"
-            resizeMode="contain"
-          />
-          <Text className="text-center text-2xl font-bold mt-10">Đăng nhập</Text>
-          <Text className="mt-2 mb-12 text-center text-gray-500">
-            Đăng nhập vào tài khoản của bạn
-          </Text>
-
-          <TextInput
-            className="border p-3 border-gray-300 rounded-2xl"
-            placeholder="Email"
-            onChangeText={(text) => setUserData({ ...userData, email: text })}
-            value={userData.email}
-          />
-          <TextInput
-            className="border mt-4 p-3 border-gray-300 rounded-2xl"
-            placeholder="Mật khẩu"
-            secureTextEntry
-            onChangeText={(text) => setUserData({ ...userData, password: text })}
-            value={userData.password}
-          />
-
-          <CustomButton
-            title="Đăng nhập"
-            onPress={onSubmit}
-            containerStyle="w-full mt-7 bg-primary-600 min-h-[48px]"
-            textStyle="text-white"
-          />
-          {/* <View className="flex mt-4 flex-row justify-center items-center">
-            <TouchableOpacity>
-              <Text className="text-gray-400 text-md">Quên mật khẩu?</Text>
-            </TouchableOpacity>
-          </View> */}
+    <ScreenWrapper bg="white">
+      <StatusBar style="dark" />
+      <View className="ml-4">
+        <BackButton />
+      </View>
+      <View className="flex-1 px-8">
+        <View className="py-12" style={{ gap: 16 }}>
+          <Text className={styles.title}>Hey,</Text>
+          <Text className={styles.title}>Welcome Back</Text>
         </View>
-      </SafeAreaView>
-      <View className="w-full bg-white">
-        <View className="flex-row gap-1 flex text-center pb-10 mx-auto">
-          <Text>Bạn chưa có tài khoản?</Text>
-          <TouchableOpacity onPress={() => router.push(ERouteTable.SIGIN_UP)}>
-            <Text className="text-primary-600 font-bold">Đăng ký</Text>
-          </TouchableOpacity>
+
+        <View style={{ gap: 28 }}>
+          <Text className="text-base color-gray-600">Please login to continue</Text>
+          <Input
+            placeholder="Enter you email"
+            icon={<Icon name="mail-outline" size={18} />}
+            onChangeText={setEmail}
+          />
+          <Input
+            placeholder="Enter you password"
+            icon={<Icon name="lock-closed-outline" size={18} />}
+            secureTextEntry
+            onChangeText={setPassword}
+          />
+          <Button title="Login" onPress={onSubmit} loading={loading} />
+
+          {/* <Button
+            title="Forgot Password?"
+            variant="secondary"
+            buttonStyle="self-center"
+            disabled={loading}
+            textStyle="text-black font-pregular"
+          /> */}
+          {/* <CheckBox label="You are Admin" value={isAdmin} onChange={setIsAdmin} /> */}
+        </View>
+        <View className="flex-row items-center justify-center mt-6" style={{ gap: 8 }}>
+          <Text className="text-base text-gray-700">Don&apos;t have an account?</Text>
+          <Button
+            title="Sign Up"
+            variant="secondary"
+            disabled={loading}
+            onPress={() => router.push(ERouteTable.SIGIN_UP)}
+          />
         </View>
       </View>
-    </>
+    </ScreenWrapper>
   )
 }
 

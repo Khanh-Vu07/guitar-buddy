@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import store from '@/redux'
 import { AppRegistry } from 'react-native'
 import TrackPlayer from 'react-native-track-player'
-import App from '@/app/index'
+import App from '@/app/_index'
 import service from '@/constants/playbackService'
 
 SplashScreen.preventAutoHideAsync()

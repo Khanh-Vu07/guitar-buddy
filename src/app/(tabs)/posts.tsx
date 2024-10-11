@@ -8,7 +8,7 @@ import ScreenWrapper from '@/components/ScreenWrapper'
 const Create = () => {
   return (
     <ScreenWrapper bg="white">
-      <HeaderHome title="Bài viết" />
+      <HeaderHome title="Lessons" />
       <FlatList
         className="flex-1 px-4"
         showsVerticalScrollIndicator={false}

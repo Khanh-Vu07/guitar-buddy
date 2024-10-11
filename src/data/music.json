@@ -1,451 +1,136 @@
 [
   {
     "id": "1",
-    "name": "Bài 1: Nhận biết nốt trên đàn piano và mẫu luyện ngón số 1",
+    "name": "Lesson 1: Identifying notes on the piano and finger exercise pattern number 1",
     "videoThumbnail": "https://www.youtube.com/embed/SD_gz8C_vkU?si=NKe0q_x_MnC9LC3A",
-    "shortDescription": "Trong bài học đầu tiên, bạn sẽ học cách nhận diện các nốt nhạc trên bàn phím piano và luyện tập kỹ thuật ngón tay của mình. Video sẽ đề cập đến các chủ đề như tên gọi của các nốt nhạc, quy ước đánh số ngón tay quốc tế và cách đặt tay trên đàn. Sau bài học này, bạn sẽ có thể chơi một bài tập đơn giản gồm năm nốt bằng cả hai tay. Dù bạn là người mới hoàn toàn hay đã có một chút kinh nghiệm chơi piano, video này là một điểm khởi đầu tuyệt vời cho hành trình học piano của bạn.",
-    "thumbnail": "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201806/MIT-Music-Language_0.jpg?itok=W44smSDM",
+    "shortDescription": "In this first lesson, you will learn how to identify the notes on a piano keyboard and practice your fingering technique. The video will cover topics such as the different note names, international finger numbering conventions, and hand positioning. By the end of this lesson, you will be able to play a simple five-note exercise with both hands. Whether you are a complete beginner or have some piano experience, this video is a great starting point for your piano journey.",
+    "thumbnail": "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201806/MIT-Music-Language_0.jpg",
     "category": "Piano",
     "level": "1",
     "target": [
-      "LXác định các nốt trên bàn phím piano",
-      "Học các quy ước đánh số ngón tay quốc tế",
-      "Thực hành vị trí tay đúng cách",
-      "Chơi một bài tập năm nốt đơn giản bằng cả hai tay"
+      "Identifying the notes on a piano keyboard",
+      "Learning international finger numbering conventions",
+      "Practicing proper hand positioning",
+      "Playing a simple five-note exercise with both hands"
     ],
     "detailLearn": [
-      "Âm nhạc và ghi nhớ tên các nốt nhạc: Đầu tiên, học về các nốt nhạc trên bảng nhạc, bao gồm nốt G, F, E, D, C, B, và A trong dải nhạc cổ điển.",
-      "Âm nhạc và độ dài của nốt nhạc: Hiểu về giá trị thời gian của các nốt nhạc, bao gồm nốt tròn, nốt nửa tròn, nốt tròn bằng nốt nửa tròn, nốt tứ thời, nốt tám thời, và nốt sáu thời.",
-      "Các phím đàn và vị trí các nốt nhạc: Học cách tìm các nốt nhạc trên bàn đàn piano và trên dây đàn của các nhạc cụ dây khác như guitar.",
-      "Giọng và các loại giọng: Tìm hiểu về các loại giọng như Soprano, Alto, Tenor, và Bass, và cách chúng tương tác trong âm nhạc.",
-      "Thang điệu (Scale) và lý thuyết thang điệu: Nắm vững khái niệm về thang điệu, bao gồm thang trường và thang giãn, cũng như cách xây dựng thang điệu từ các nốt nhạc cơ bản.",
-      "Các loại giai điệu (Chord): Học về các loại giai điệu cơ bản như giai điệu thăng, giai điệu giảm, giai điệu thăng bậc, giai điệu giảm bậc, và các giai điệu mở rộng khác.",
-      "Nhịp điệu và thang nhịp điệu: Hiểu về nhịp điệu cơ bản, như nhịp đơn, nhịp kép, và nhịp bốn."
-    ],
-    "learnPractice": {
-      "exercise": {
-        "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
-        "soundLink": "https://audio.jukehost.co.uk/vTRYaTEbpaYRCxiWGgL2S91mnOuMKfLw",
-        "trackId": 1
-      },
-      "test": [
-        {
-          "question": "Câu 1: Trong các quãng sau, quãng nào là quãng 5?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Quãng A", "Quãng B", "Quãng C", "Quãng D"],
-          "correctAnswerIndex": 2
-        },
-        {
-          "question": "Câu 2: Trong các nốt sau, nốt nào là nốt Đô?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Nốt A", "Nốt B", "Nốt C", "Nốt D"],
-          "correctAnswerIndex": 2
-        }
-      ]
-    }
+      "Naming of piano keys: Be able to identify the names of individual piano keys, including the white keys (C, D, E, F, G, A, B) and the black keys.",
+      "Relationship between notes: Understand the relationships between notes on the piano, including how to find the notes above and below a given note.",
+      "Basic finger numbering: The standard finger numbering system for the right and left hands, which is essential for playing piano.",
+      "Basic note patterns: Simple note patterns, such as the five-note pattern C-D-E-F-G."
+    ]
   },
   {
     "id": "2",
-    "name": "Bài 2: Nhận biết nốt trên khóa sol và mẫu luyện ngón số 2",
+    "name": "Lesson 2: Identifying notes on the treble clef and finger exercise pattern number 2",
     "videoThumbnail": "https://www.youtube.com/embed/VbYJNB6dGEU?si=AYo4rabMy6baWGM4",
-    "shortDescription": "Trong bài học thứ hai, bạn sẽ học cách xác định nốt nhạc trên khóa Sol và một mẫu ngón tay có thể được sử dụng để chơi các gam và hợp âm.",
+    "shortDescription": "In this second lesson, you will learn about identifying notes on the treble clef and a fingering pattern that can be used to play scales and arpeggios.",
     "thumbnail": "https://media.gettyimages.com/id/1472543626/video/teenage-boy-practicing-piano-at-home.jpg?s=640x640&k=20&c=NmZ8rl65RAAogNVi1qd_zWBpERSXCaQFDcUBf8c8YR8=",
     "category": "Piano",
     "level": "1",
     "target": [
-      "Cách xác định các nốt của thang âm trưởng trên khóa Sol",
-      "Cách chơi một mẫu ngón cơ bản.",
-      "Cách luyện tập các gam, hợp âm và cải thiện kỹ thuật chơi piano của bạn",
-      "Luyện ngón tay với phím đàn piano cơ bản"
+      "How to identify the notes of the major scale on the treble clef",
+      "How to play a basic fingering pattern",
+      "How to practice scales, arpeggios and improve your piano playing technique"
     ],
     "detailLearn": [
-      "Âm nhạc và ghi nhớ tên các nốt nhạc: Đầu tiên, học về các nốt nhạc trên bảng nhạc, bao gồm nốt G, F, E, D, C, B, và A trong dải nhạc cổ điển.",
-      "Âm nhạc và độ dài của nốt nhạc: Hiểu về giá trị thời gian của các nốt nhạc, bao gồm nốt tròn, nốt nửa tròn, nốt tròn bằng nốt nửa tròn, nốt tứ thời, nốt tám thời, và nốt sáu thời.",
-      "Các phím đàn và vị trí các nốt nhạc: Học cách tìm các nốt nhạc trên bàn đàn piano và trên dây đàn của các nhạc cụ dây khác như guitar.",
-      "Giọng và các loại giọng: Tìm hiểu về các loại giọng như Soprano, Alto, Tenor, và Bass, và cách chúng tương tác trong âm nhạc.",
-      "Thang điệu (Scale) và lý thuyết thang điệu: Nắm vững khái niệm về thang điệu, bao gồm thang trường và thang giãn, cũng như cách xây dựng thang điệu từ các nốt nhạc cơ bản.",
-      "Các loại giai điệu (Chord): Học về các loại giai điệu cơ bản như giai điệu thăng, giai điệu giảm, giai điệu thăng bậc, giai điệu giảm bậc, và các giai điệu mở rộng khác.",
-      "Nhịp điệu và thang nhịp điệu: Hiểu về nhịp điệu cơ bản, như nhịp đơn, nhịp kép, và nhịp bốn."
-    ],
-    "learnPractice": {
-      "exercise": {
-        "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
-        "soundLink": "https://audio.jukehost.co.uk/priWy2vYsWODmQiM6KevNYVLpPJGPZGd",
-        "trackId": 2
-      },
-      "test": [
-        {
-          "question": "Câu 1: Trong các quãng sau, quãng nào là quãng 5?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Quãng A", "Quãng B", "Quãng C", "Quãng D"],
-          "correctAnswerIndex": 2
-        },
-        {
-          "question": "Câu 2: Trong các nốt sau, nốt nào là nốt Đô?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Nốt A", "Nốt B", "Nốt C", "Nốt D"],
-          "correctAnswerIndex": 2
-        }
-      ]
-    }
+      "Treble Clef: Understand the layout of the treble clef, including the five lines and four spaces, as well as the numbering system from 1 to 5 and A to E.",
+      "Note Names: Names of the notes on the treble clef, starting with the note G on the second line and proceeding upwards and downwards using the pattern G, A, B, C, D, E, F.",
+      "Ledger Lines: Used to represent notes above or below the five lines of the staff."
+    ]
   },
   {
     "id": "3",
-    "name": "Bài 3: Trường độ, số chỉ nhịp, dấu chấm dôi và mẫu luyện ngón số 3",
+    "name": "Lesson 3: Note duration, time signature, dotted notes, and finger exercise pattern number 3",
     "videoThumbnail": "https://www.youtube.com/embed/zgJ_8-JpFy8?si=zdz0kNZosVYm5XyP",
-    "shortDescription": "Bạn có biết rằng các nốt nhạc có trường độ khác nhau và bản nhạc sử dụng các con số để chỉ số nhịp trong một ô nhạc không? Trong bài học này, bạn sẽ được tìm hiểu về nốt nhạc, nhịp điệu và cách chơi chúng.",
+    "shortDescription": "Did you know that music notes have different durations and sheet music uses numbers to indicate the number of beats in a measure? In this lesson, you will learn about music notes, rhythm and how to play them.",
     "thumbnail": "https://media.gettyimages.com/id/1432239300/video/teenage-boy-playing-piano.jpg?s=640x640&k=20&c=JISEo3Zuh9P5lyAttj0jjsV4s9cjXDywF9XbKp-NOAQ=",
     "category": "Piano",
     "level": "1",
     "target": [
-      "Thời gian của nốt nhạc",
-      "Chỉ số nhịp trong một ô nhịp",
-      "Nốt nhạc có dấu chấm",
-      "Bài luyện ngón"
-    ],
-    "detailLearn": [
-      "Âm nhạc và ghi nhớ tên các nốt nhạc: Đầu tiên, học về các nốt nhạc trên bảng nhạc, bao gồm nốt G, F, E, D, C, B, và A trong dải nhạc cổ điển.",
-      "Âm nhạc và độ dài của nốt nhạc: Hiểu về giá trị thời gian của các nốt nhạc, bao gồm nốt tròn, nốt nửa tròn, nốt tròn bằng nốt nửa tròn, nốt tứ thời, nốt tám thời, và nốt sáu thời.",
-      "Các phím đàn và vị trí các nốt nhạc: Học cách tìm các nốt nhạc trên bàn đàn piano và trên dây đàn của các nhạc cụ dây khác như guitar.",
-      "Giọng và các loại giọng: Tìm hiểu về các loại giọng như Soprano, Alto, Tenor, và Bass, và cách chúng tương tác trong âm nhạc.",
-      "Thang điệu (Scale) và lý thuyết thang điệu: Nắm vững khái niệm về thang điệu, bao gồm thang trường và thang giãn, cũng như cách xây dựng thang điệu từ các nốt nhạc cơ bản.",
-      "Các loại giai điệu (Chord): Học về các loại giai điệu cơ bản như giai điệu thăng, giai điệu giảm, giai điệu thăng bậc, giai điệu giảm bậc, và các giai điệu mở rộng khác.",
-      "Nhịp điệu và thang nhịp điệu: Hiểu về nhịp điệu cơ bản, như nhịp đơn, nhịp kép, và nhịp bốn."
-    ],
-    "learnPractice": {
-      "exercise": {
-        "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
-        "soundLink": "https://audio.jukehost.co.uk/vTRYaTEbpaYRCxiWGgL2S91mnOuMKfLw",
-        "trackId": 3
-      },
-      "test": [
-        {
-          "question": "Câu 1: Trong các quãng sau, quãng nào là quãng 5?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Quãng A", "Quãng B", "Quãng C", "Quãng D"],
-          "correctAnswerIndex": 2
-        },
-        {
-          "question": "Câu 2: Trong các nốt sau, nốt nào là nốt Đô?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Nốt A", "Nốt B", "Nốt C", "Nốt D"],
-          "correctAnswerIndex": 2
-        }
-      ]
-    }
+      "Music notes’ durations",
+      "Indicating number of beats in a measure",
+      "Dotted notes",
+      "Finger practice"
+    ]
   },
   {
     "id": "4",
-    "name": "Bài 4: Khóa Fa, dấu nhắc lại và mẫu luyện ngón số 4",
+    "name": "Lesson 4: Bass clef, repeat signs, and finger exercise pattern number 4",
     "videoThumbnail": "https://www.youtube.com/embed/KjTbbzZGuCI?si=eYOrENvH7KoFcPbX",
-    "shortDescription": "Bài học này sẽ đề cập đến cách xác định các nốt trên khóa Sol và cũng như khóa Fa để chơi tay trái. Hơn nữa, mình sẽ giải thích về dấu nhắc lại.",
+    "shortDescription": "This lesson will cover how to identify the keys on the treble clef and also how to use the bass clef to play the left hand. What’s more, I will discuss the repeat sign, which tells the player to play a section of music twice.",
     "thumbnail": "https://media.gettyimages.com/id/1472540944/video/teenage-boy-practicing-piano-at-home.jpg?s=640x640&k=20&c=LjUvLipZliUwzJda2Et7gtsGmO4RNsds-j4lqkvu2Xo=",
     "category": "Piano",
     "level": "2",
-    "target": [
-      "Cách xác định các nốt nhạc trên khóa Sol, khóa Fa",
-      "Cách hiểu dấu nhắc lại",
-      "Kết hợp cả hai tay để chơi một đoạn nhạc ngắn",
-      "Sử dụng bài luyện ngón để tăng cường sức mạnh cho ngón tay của bạn"
-    ],
     "detailLearn": [
-      "Âm nhạc và ghi nhớ tên các nốt nhạc: Đầu tiên, học về các nốt nhạc trên bảng nhạc, bao gồm nốt G, F, E, D, C, B, và A trong dải nhạc cổ điển.",
-      "Âm nhạc và độ dài của nốt nhạc: Hiểu về giá trị thời gian của các nốt nhạc, bao gồm nốt tròn, nốt nửa tròn, nốt tròn bằng nốt nửa tròn, nốt tứ thời, nốt tám thời, và nốt sáu thời.",
-      "Các phím đàn và vị trí các nốt nhạc: Học cách tìm các nốt nhạc trên bàn đàn piano và trên dây đàn của các nhạc cụ dây khác như guitar.",
-      "Giọng và các loại giọng: Tìm hiểu về các loại giọng như Soprano, Alto, Tenor, và Bass, và cách chúng tương tác trong âm nhạc.",
-      "Thang điệu (Scale) và lý thuyết thang điệu: Nắm vững khái niệm về thang điệu, bao gồm thang trường và thang giãn, cũng như cách xây dựng thang điệu từ các nốt nhạc cơ bản.",
-      "Các loại giai điệu (Chord): Học về các loại giai điệu cơ bản như giai điệu thăng, giai điệu giảm, giai điệu thăng bậc, giai điệu giảm bậc, và các giai điệu mở rộng khác.",
-      "Nhịp điệu và thang nhịp điệu: Hiểu về nhịp điệu cơ bản, như nhịp đơn, nhịp kép, và nhịp bốn."
-    ],
-    "learnPractice": {
-      "exercise": {
-        "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
-        "soundLink": "https://audio.jukehost.co.uk/vTRYaTEbpaYRCxiWGgL2S91mnOuMKfLw",
-        "trackId": 3
-      },
-      "test": [
-        {
-          "question": "Câu 1: Trong các quãng sau, quãng nào là quãng 5?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Quãng A", "Quãng B", "Quãng C", "Quãng D"],
-          "correctAnswerIndex": 2
-        },
-        {
-          "question": "Câu 2: Trong các nốt sau, nốt nào là nốt Đô?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Nốt A", "Nốt B", "Nốt C", "Nốt D"],
-          "correctAnswerIndex": 2
-        }
-      ]
-    }
+      "How to identify the keys on the bass clef",
+      "How to understand the repeat sign",
+      "How to combine both hands to play a short piece of music",
+      "How to use a new finger exercise to strengthen your fingers"
+    ]
   },
   {
     "id": "5",
-    "name": "Bài 5: Cung, quãng là gì ? Tìm hiểu về cung, quãng và mẫu luyện ngón số 5",
+    "name": "Lesson 5: What are intervals and tones? Learn about intervals, tones, and finger exercise pattern number 5",
     "videoThumbnail": "https://www.youtube.com/embed/jujVIpg9RU0?si=o4a1W-A_ahjMg1Br",
-    "shortDescription": "Trong bài học thứ năm này, bạn sẽ tìm hiểu về khoảng cách các nốt và quãng tám, bao gồm định nghĩa về khoảng cách giữa hai nốt nhạc và cách đếm các khoảng giữa hai nốt.",
+    "shortDescription": "In this fifth lesson, you will learn about music intervals and octaves, including the definition of the interval between two notes and counting the number of notes between two notes.",
     "thumbnail": "https://media.gettyimages.com/id/1432245877/video/teenage-boy-playing-piano.jpg?s=640x640&k=20&c=d62Pik5ToBuWYAyc7gS1HrN4XP7cvummRqxLiRgFzEo=",
     "category": "Piano",
     "level": "2",
-    "target": [
-      "Khoảng cách và quãng tám",
-      "Cách đếm số nốt trong một quãng tám",
-      "Các loại quãng tám khác nhau",
-      "Luyện ngón tay với phím đàn piano cơ bản"
-    ],
     "detailLearn": [
-      "Âm nhạc và ghi nhớ tên các nốt nhạc: Đầu tiên, học về các nốt nhạc trên bảng nhạc, bao gồm nốt G, F, E, D, C, B, và A trong dải nhạc cổ điển.",
-      "Âm nhạc và độ dài của nốt nhạc: Hiểu về giá trị thời gian của các nốt nhạc, bao gồm nốt tròn, nốt nửa tròn, nốt tròn bằng nốt nửa tròn, nốt tứ thời, nốt tám thời, và nốt sáu thời.",
-      "Các phím đàn và vị trí các nốt nhạc: Học cách tìm các nốt nhạc trên bàn đàn piano và trên dây đàn của các nhạc cụ dây khác như guitar.",
-      "Giọng và các loại giọng: Tìm hiểu về các loại giọng như Soprano, Alto, Tenor, và Bass, và cách chúng tương tác trong âm nhạc.",
-      "Thang điệu (Scale) và lý thuyết thang điệu: Nắm vững khái niệm về thang điệu, bao gồm thang trường và thang giãn, cũng như cách xây dựng thang điệu từ các nốt nhạc cơ bản.",
-      "Các loại giai điệu (Chord): Học về các loại giai điệu cơ bản như giai điệu thăng, giai điệu giảm, giai điệu thăng bậc, giai điệu giảm bậc, và các giai điệu mở rộng khác.",
-      "Nhịp điệu và thang nhịp điệu: Hiểu về nhịp điệu cơ bản, như nhịp đơn, nhịp kép, và nhịp bốn."
-    ],
-    "learnPractice": {
-      "exercise": {
-        "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
-        "soundLink": "https://audio.jukehost.co.uk/vTRYaTEbpaYRCxiWGgL2S91mnOuMKfLw",
-        "trackId": 3
-      },
-      "test": [
-        {
-          "question": "Câu 1: Trong các quãng sau, quãng nào là quãng 5?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Quãng A", "Quãng B", "Quãng C", "Quãng D"],
-          "correctAnswerIndex": 2
-        },
-        {
-          "question": "Câu 2: Trong các nốt sau, nốt nào là nốt Đô?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Nốt A", "Nốt B", "Nốt C", "Nốt D"],
-          "correctAnswerIndex": 2
-        }
-      ]
-    }
+      "Intervals and octaves",
+      "How to count the number of notes within an octave",
+      "Different types of octaves",
+      "Finger exercise"
+    ]
   },
   {
     "id": "6",
-    "name": "Bài 6: Dấu hóa và mẫu luyện ngón số 6",
+    "name": "Lesson 6: Accidentals and finger exercise pattern number 6",
     "videoThumbnail": "https://www.youtube.com/embed/yjvJ9tx0cUg?si=5kiuN2c_SThI6Szu",
-    "shortDescription": "Trong bài học thứ sáu, bạn sẽ tìm hiểu về ba loại dấu hóa trong âm nhạc: dấu thăng, dấu giáng và dấu bình.",
+    "shortDescription": "In this sixth lesson, you will learn about three types of accidentals in music: sharps, flats, and naturals.",
     "thumbnail": "https://media.gettyimages.com/id/1472552417/video/teenage-boy-practicing-piano-at-home.jpg?s=640x640&k=20&c=GI-hQ6YK7is7cOsUW98yg7DkXnA6NafhLHEZJXUVkqo=",
     "category": "Piano",
     "level": "2",
-    "target": [
-      "Dấu thăng, dấu giáng và dấu bình là gì?",
-      "Cách đọc và chơi với các nốt có dấu hóa",
-      "Học các hợp âm cơ bản"
-    ],
     "detailLearn": [
-      "Âm nhạc và ghi nhớ tên các nốt nhạc: Đầu tiên, học về các nốt nhạc trên bảng nhạc, bao gồm nốt G, F, E, D, C, B, và A trong dải nhạc cổ điển.",
-      "Âm nhạc và độ dài của nốt nhạc: Hiểu về giá trị thời gian của các nốt nhạc, bao gồm nốt tròn, nốt nửa tròn, nốt tròn bằng nốt nửa tròn, nốt tứ thời, nốt tám thời, và nốt sáu thời.",
-      "Các phím đàn và vị trí các nốt nhạc: Học cách tìm các nốt nhạc trên bàn đàn piano và trên dây đàn của các nhạc cụ dây khác như guitar.",
-      "Giọng và các loại giọng: Tìm hiểu về các loại giọng như Soprano, Alto, Tenor, và Bass, và cách chúng tương tác trong âm nhạc.",
-      "Thang điệu (Scale) và lý thuyết thang điệu: Nắm vững khái niệm về thang điệu, bao gồm thang trường và thang giãn, cũng như cách xây dựng thang điệu từ các nốt nhạc cơ bản.",
-      "Các loại giai điệu (Chord): Học về các loại giai điệu cơ bản như giai điệu thăng, giai điệu giảm, giai điệu thăng bậc, giai điệu giảm bậc, và các giai điệu mở rộng khác.",
-      "Nhịp điệu và thang nhịp điệu: Hiểu về nhịp điệu cơ bản, như nhịp đơn, nhịp kép, và nhịp bốn."
-    ],
-    "learnPractice": {
-      "exercise": {
-        "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
-        "soundLink": "https://audio.jukehost.co.uk/vTRYaTEbpaYRCxiWGgL2S91mnOuMKfLw",
-        "trackId": 3
-      },
-      "test": [
-        {
-          "question": "Câu 1: Trong các quãng sau, quãng nào là quãng 5?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Quãng A", "Quãng B", "Quãng C", "Quãng D"],
-          "correctAnswerIndex": 2
-        },
-        {
-          "question": "Câu 2: Trong các nốt sau, nốt nào là nốt Đô?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Nốt A", "Nốt B", "Nốt C", "Nốt D"],
-          "correctAnswerIndex": 2
-        }
-      ]
-    }
+      "What are the sharps, the flats, the naturals?",
+      "How to read and play with accidentals"
+    ]
   },
   {
     "id": "7",
-    "name": "Bài 7: Các nốt móc và mẫu luyện ngón số 7",
+    "name": "Lesson 7: Eighth notes and finger exercise pattern number 7",
     "videoThumbnail": "https://www.youtube.com/embed/IJZad4HVF-k?si=oFMu6xleeRrkc0O7",
-    "shortDescription": "Bạn có bao giờ thấy bối rối về sự khác biệt giữa nốt đen và nốt trắng, hay các loại nốt khác nữa không? Vậy bài học này sẽ dạy bạn cách chơi các loại nốt khác nhau, bao gồm nốt đen, nốt trắng, nốt móc đơn và nốt móc kép, với nhiều nhịp điệu và tốc độ khác nhau.",
+    "shortDescription": "Have you ever been confused by the differences between quarter notes and eighth notes, or even more? So this lesson will teach you how to play various note combinations, including quarter notes, half notes, eighth notes, and sixteenth notes, in different rhythms and tempos.",
     "thumbnail": "https://media.gettyimages.com/id/1669475287/video/teenage-boy-is-practicing-playing-grand-piano.jpg?s=640x640&k=20&c=B7vCUO4TcPScDj-i58QARftYrTkKqIlJXzOAooirk9M=",
     "category": "Piano",
-    "level": "2",
-    "target": [
-      "Làm quen với các nốt nhạc",
-      "Học đàn piano vỡ lòng",
-      "Học các hợp âm cơ bản",
-      "Luyện ngón tay với phím đàn piano cơ bản"
-    ],
-    "detailLearn": [
-      "Âm nhạc và ghi nhớ tên các nốt nhạc: Đầu tiên, học về các nốt nhạc trên bảng nhạc, bao gồm nốt G, F, E, D, C, B, và A trong dải nhạc cổ điển.",
-      "Âm nhạc và độ dài của nốt nhạc: Hiểu về giá trị thời gian của các nốt nhạc, bao gồm nốt tròn, nốt nửa tròn, nốt tròn bằng nốt nửa tròn, nốt tứ thời, nốt tám thời, và nốt sáu thời.",
-      "Các phím đàn và vị trí các nốt nhạc: Học cách tìm các nốt nhạc trên bàn đàn piano và trên dây đàn của các nhạc cụ dây khác như guitar.",
-      "Giọng và các loại giọng: Tìm hiểu về các loại giọng như Soprano, Alto, Tenor, và Bass, và cách chúng tương tác trong âm nhạc.",
-      "Thang điệu (Scale) và lý thuyết thang điệu: Nắm vững khái niệm về thang điệu, bao gồm thang trường và thang giãn, cũng như cách xây dựng thang điệu từ các nốt nhạc cơ bản.",
-      "Các loại giai điệu (Chord): Học về các loại giai điệu cơ bản như giai điệu thăng, giai điệu giảm, giai điệu thăng bậc, giai điệu giảm bậc, và các giai điệu mở rộng khác.",
-      "Nhịp điệu và thang nhịp điệu: Hiểu về nhịp điệu cơ bản, như nhịp đơn, nhịp kép, và nhịp bốn."
-    ],
-    "learnPractice": {
-      "exercise": {
-        "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
-        "soundLink": "https://audio.jukehost.co.uk/vTRYaTEbpaYRCxiWGgL2S91mnOuMKfLw",
-        "trackId": 3
-      },
-      "test": [
-        {
-          "question": "Câu 1: Trong các quãng sau, quãng nào là quãng 5?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Quãng A", "Quãng B", "Quãng C", "Quãng D"],
-          "correctAnswerIndex": 2
-        },
-        {
-          "question": "Câu 2: Trong các nốt sau, nốt nào là nốt Đô?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Nốt A", "Nốt B", "Nốt C", "Nốt D"],
-          "correctAnswerIndex": 2
-        }
-      ]
-    }
+    "level": "2"
   },
   {
     "id": "8",
-    "name": "Bài 8: Liên ba và mẫu luyện ngón số 8",
+    "name": "Lesson 8: Triplets and finger exercise pattern number 8",
     "videoThumbnail": "https://www.youtube.com/embed/LNPeufPaWwc?si=nTK0SAE1d662fZmi",
-    "shortDescription": "Bạn muốn học đàn piano nhưng chưa biết bắt đầu từ đâu? Đừng quá lo lắng! Hãy xem ngay và cùng thực hành để bắt đầu một hành trình học đàn piano đầy thú vị nhé.",
+    "shortDescription": "You may sometimes encounter a tiny number 3 which is noted on top or beneath the notes and do not know the exact way to play these notes. In this eighth lesson, I will explain about triplets and their different types and also how to count them.",
     "thumbnail": "https://media.gettyimages.com/id/135821555/video/pianists-hands.jpg?s=640x640&k=20&c=Nyi_GBLMjG9gU2JtcGkwKArmk2cBmrz5QK35oJiD9z4=",
     "category": "Piano",
-    "level": "3",
-    "target": [
-      "Làm quen với các nốt nhạc",
-      "Học đàn piano vỡ lòng",
-      "Học các hợp âm cơ bản",
-      "Luyện ngón tay với phím đàn piano cơ bản"
-    ],
-    "detailLearn": [
-      "Âm nhạc và ghi nhớ tên các nốt nhạc: Đầu tiên, học về các nốt nhạc trên bảng nhạc, bao gồm nốt G, F, E, D, C, B, và A trong dải nhạc cổ điển.",
-      "Âm nhạc và độ dài của nốt nhạc: Hiểu về giá trị thời gian của các nốt nhạc, bao gồm nốt tròn, nốt nửa tròn, nốt tròn bằng nốt nửa tròn, nốt tứ thời, nốt tám thời, và nốt sáu thời.",
-      "Các phím đàn và vị trí các nốt nhạc: Học cách tìm các nốt nhạc trên bàn đàn piano và trên dây đàn của các nhạc cụ dây khác như guitar.",
-      "Giọng và các loại giọng: Tìm hiểu về các loại giọng như Soprano, Alto, Tenor, và Bass, và cách chúng tương tác trong âm nhạc.",
-      "Thang điệu (Scale) và lý thuyết thang điệu: Nắm vững khái niệm về thang điệu, bao gồm thang trường và thang giãn, cũng như cách xây dựng thang điệu từ các nốt nhạc cơ bản.",
-      "Các loại giai điệu (Chord): Học về các loại giai điệu cơ bản như giai điệu thăng, giai điệu giảm, giai điệu thăng bậc, giai điệu giảm bậc, và các giai điệu mở rộng khác.",
-      "Nhịp điệu và thang nhịp điệu: Hiểu về nhịp điệu cơ bản, như nhịp đơn, nhịp kép, và nhịp bốn."
-    ],
-    "learnPractice": {
-      "exercise": {
-        "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
-        "soundLink": "https://audio.jukehost.co.uk/vTRYaTEbpaYRCxiWGgL2S91mnOuMKfLw",
-        "trackId": 3
-      },
-      "test": [
-        {
-          "question": "Câu 1: Trong các quãng sau, quãng nào là quãng 5?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Quãng A", "Quãng B", "Quãng C", "Quãng D"],
-          "correctAnswerIndex": 2
-        },
-        {
-          "question": "Câu 2: Trong các nốt sau, nốt nào là nốt Đô?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Nốt A", "Nốt B", "Nốt C", "Nốt D"],
-          "correctAnswerIndex": 2
-        }
-      ]
-    }
+    "level": "3"
   },
   {
     "id": "9",
-    "name": "Bài 9: Hợp âm và cách thành lập hợp âm 3",
+    "name": "Lesson 9: Chords and how to form triads",
     "videoThumbnail": "https://www.youtube.com/embed/J9ZKSD5BB5I?si=41RJUJSYAlehcGBF",
-    "shortDescription": "Bạn muốn học đàn piano nhưng chưa biết bắt đầu từ đâu? Đừng quá lo lắng! Hãy xem ngay và cùng thực hành để bắt đầu một hành trình học đàn piano đầy thú vị nhé.",
+    "shortDescription": "Many of you may find it difficult to find chords, play the melody, or accompany a song. In this lesson, you will be covered about basic chord types, such as major, minor, augmented, and diminished.",
     "thumbnail": "https://media.gettyimages.com/id/145754696/video/pianist-composing-music.jpg?s=640x640&k=20&c=KHqrv1eEYWTmUiEnRDH8Ofa8LGBA6jLVzpfHbO87gUo=",
     "category": "Piano",
-    "level": "3",
-    "target": [
-      "Làm quen với các nốt nhạc",
-      "Học đàn piano vỡ lòng",
-      "Học các hợp âm cơ bản",
-      "Luyện ngón tay với phím đàn piano cơ bản"
-    ],
-    "detailLearn": [
-      "Âm nhạc và ghi nhớ tên các nốt nhạc: Đầu tiên, học về các nốt nhạc trên bảng nhạc, bao gồm nốt G, F, E, D, C, B, và A trong dải nhạc cổ điển.",
-      "Âm nhạc và độ dài của nốt nhạc: Hiểu về giá trị thời gian của các nốt nhạc, bao gồm nốt tròn, nốt nửa tròn, nốt tròn bằng nốt nửa tròn, nốt tứ thời, nốt tám thời, và nốt sáu thời.",
-      "Các phím đàn và vị trí các nốt nhạc: Học cách tìm các nốt nhạc trên bàn đàn piano và trên dây đàn của các nhạc cụ dây khác như guitar.",
-      "Giọng và các loại giọng: Tìm hiểu về các loại giọng như Soprano, Alto, Tenor, và Bass, và cách chúng tương tác trong âm nhạc.",
-      "Thang điệu (Scale) và lý thuyết thang điệu: Nắm vững khái niệm về thang điệu, bao gồm thang trường và thang giãn, cũng như cách xây dựng thang điệu từ các nốt nhạc cơ bản.",
-      "Các loại giai điệu (Chord): Học về các loại giai điệu cơ bản như giai điệu thăng, giai điệu giảm, giai điệu thăng bậc, giai điệu giảm bậc, và các giai điệu mở rộng khác.",
-      "Nhịp điệu và thang nhịp điệu: Hiểu về nhịp điệu cơ bản, như nhịp đơn, nhịp kép, và nhịp bốn."
-    ],
-    "learnPractice": {
-      "exercise": {
-        "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
-        "soundLink": "https://audio.jukehost.co.uk/vTRYaTEbpaYRCxiWGgL2S91mnOuMKfLw",
-        "trackId": 3
-      },
-      "test": [
-        {
-          "question": "Câu 1: Trong các quãng sau, quãng nào là quãng 5?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Quãng A", "Quãng B", "Quãng C", "Quãng D"],
-          "correctAnswerIndex": 2
-        },
-        {
-          "question": "Câu 2: Trong các nốt sau, nốt nào là nốt Đô?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Nốt A", "Nốt B", "Nốt C", "Nốt D"],
-          "correctAnswerIndex": 2
-        }
-      ]
-    }
+    "level": "3"
   },
   {
     "id": "10",
-    "name": "Bài 10: Hợp âm 7 và cách thành lập hợp âm 7",
+    "name": "Lesson 10: Seventh chords and how to form seventh chords",
     "videoThumbnail": "https://www.youtube.com/watch?v=8nBpnunIY6Y",
-    "shortDescription": "Bạn muốn học đàn piano nhưng chưa biết bắt đầu từ đâu? Đừng quá lo lắng! Hãy xem ngay và cùng thực hành để bắt đầu một hành trình học đàn piano đầy thú vị nhé.",
+    "shortDescription": "I hope you have firmly grasped the knowledge about chords in the previous lesson. This lesson will explain to you about various types of dominant seventh chords and also go over the fundamentals of chords you learned.",
     "thumbnail": "https://media.gettyimages.com/id/1441713538/video/macro-overhead-shot-of-a-mans-fingers-playing-black-and-white-piano-keys.jpg?s=640x640&k=20&c=am17MFrXhH2ZmWEjQ0-ic0vfXBW6DODE6yAZ4ug3jd0=",
     "category": "Piano",
-    "level": "3",
-    "target": [
-      "Làm quen với các nốt nhạc",
-      "Học đàn piano vỡ lòng",
-      "Học các hợp âm cơ bản",
-      "Luyện ngón tay với phím đàn piano cơ bản"
-    ],
-    "detailLearn": [
-      "Âm nhạc và ghi nhớ tên các nốt nhạc: Đầu tiên, học về các nốt nhạc trên bảng nhạc, bao gồm nốt G, F, E, D, C, B, và A trong dải nhạc cổ điển.",
-      "Âm nhạc và độ dài của nốt nhạc: Hiểu về giá trị thời gian của các nốt nhạc, bao gồm nốt tròn, nốt nửa tròn, nốt tròn bằng nốt nửa tròn, nốt tứ thời, nốt tám thời, và nốt sáu thời.",
-      "Các phím đàn và vị trí các nốt nhạc: Học cách tìm các nốt nhạc trên bàn đàn piano và trên dây đàn của các nhạc cụ dây khác như guitar.",
-      "Giọng và các loại giọng: Tìm hiểu về các loại giọng như Soprano, Alto, Tenor, và Bass, và cách chúng tương tác trong âm nhạc.",
-      "Thang điệu (Scale) và lý thuyết thang điệu: Nắm vững khái niệm về thang điệu, bao gồm thang trường và thang giãn, cũng như cách xây dựng thang điệu từ các nốt nhạc cơ bản.",
-      "Các loại giai điệu (Chord): Học về các loại giai điệu cơ bản như giai điệu thăng, giai điệu giảm, giai điệu thăng bậc, giai điệu giảm bậc, và các giai điệu mở rộng khác.",
-      "Nhịp điệu và thang nhịp điệu: Hiểu về nhịp điệu cơ bản, như nhịp đơn, nhịp kép, và nhịp bốn."
-    ],
-    "learnPractice": {
-      "exercise": {
-        "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQp4IX137kgdjcmBII0owF0BaOsJu-PB5gQ&s",
-        "soundLink": "https://audio.jukehost.co.uk/vTRYaTEbpaYRCxiWGgL2S91mnOuMKfLw",
-        "trackId": 3
-      },
-      "test": [
-        {
-          "question": "Câu 1: Trong các quãng sau, quãng nào là quãng 5?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Quãng A", "Quãng B", "Quãng C", "Quãng D"],
-          "correctAnswerIndex": 2
-        },
-        {
-          "question": "Câu 2: Trong các nốt sau, nốt nào là nốt Đô?",
-          "imageUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFB8weXfQn5edZOP362KAAWOWWDda87fTzA&s",
-          "options": ["Nốt A", "Nốt B", "Nốt C", "Nốt D"],
-          "correctAnswerIndex": 2
-        }
-      ]
-    }
+    "level": "3"
   }
 ]

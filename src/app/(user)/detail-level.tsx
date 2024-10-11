@@ -1,9 +1,10 @@
-import { FlatList, SafeAreaView, Text, TouchableOpacity, View } from 'react-native'
+import { FlatList, Text, TouchableOpacity, View } from 'react-native'
 import { router, useLocalSearchParams } from 'expo-router'
 import { AntDesign, EvilIcons } from '@expo/vector-icons'
 import data from '@/data/music.json'
 import ItemHomeHorizontal from '@/components/ItemHomeHorizontal'
 import React from 'react'
+import ScreenWrapper from '@/components/ScreenWrapper'
 
 export default function DetailLevel() {
   const params = useLocalSearchParams()
@@ -12,7 +13,7 @@ export default function DetailLevel() {
   const lessons = data.filter((item) => item.level === level)
 
   return (
-    <SafeAreaView className="bg-white h-full relative flex-1">
+    <ScreenWrapper bg="white">
       <View className="flex-row flex justify-between items-center pb-2 mx-4">
         <TouchableOpacity onPress={() => router.back()}>
           <AntDesign name="left" size={24} color="black" />
@@ -32,6 +33,6 @@ export default function DetailLevel() {
           ListFooterComponent={<View className="h-12" />}
         />
       </View>
-    </SafeAreaView>
+    </ScreenWrapper>
   )
 }
