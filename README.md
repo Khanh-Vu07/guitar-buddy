@@ -4,6 +4,8 @@
 
 Piano Pulse is a comprehensive app designed to help users of all skill levels—from beginners to advanced players—learn and practice piano. The application offers a structured and engaging way to improve piano techniques, understand music theory, and challenge yourself with world-famous music pieces.
 
+**Demo**: [DRIVE LINK - DOWNLOAD AND TRY](https://drive.google.com/drive/folders/1-yTus7CcHMgzIQwkusXUNdgJOTDOfIBK?usp=sharing) 
+
 ## Key Features
 
 - **User Authentication**: Register and log in using your email and password for secure access to personalized content.
