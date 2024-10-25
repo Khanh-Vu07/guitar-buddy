@@ -1,136 +1,192 @@
 [
   {
     "id": "1",
-    "name": "Lesson 1: Identifying notes on the piano and finger exercise pattern number 1",
-    "videoThumbnail": "https://www.youtube.com/embed/SD_gz8C_vkU?si=NKe0q_x_MnC9LC3A",
-    "shortDescription": "In this first lesson, you will learn how to identify the notes on a piano keyboard and practice your fingering technique. The video will cover topics such as the different note names, international finger numbering conventions, and hand positioning. By the end of this lesson, you will be able to play a simple five-note exercise with both hands. Whether you are a complete beginner or have some piano experience, this video is a great starting point for your piano journey.",
-    "thumbnail": "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201806/MIT-Music-Language_0.jpg",
-    "category": "Piano",
+    "name": "Lesson 1: Holding the Pick and Basic Guitar Techniques",
+    "videoThumbnail": "https://www.youtube.com/watch?v=z5w-CgZWSwU",
+    "shortDescription": "In this lesson, you will learn how to hold the pick correctly and basic techniques for playing the guitar. The video will guide you on how to use the pick, different strumming styles, and how to produce the best sound from your guitar.",
+    "thumbnail": "https://img.notionusercontent.com/s3/prod-files-secure%2F1c075c65-ec18-4faa-854f-310570fd9d0b%2F75e8ead4-50ab-48f7-8bbe-42d6adaf6b55%2Fimage_(1).jpg/size/w=1300?exp=1729948150&sig=321NCTBNgxteXxNURP23_zI7Tb8zL1j52336CCagNew",
+    "category": "Guitar",
     "level": "1",
     "target": [
-      "Identifying the notes on a piano keyboard",
-      "Learning international finger numbering conventions",
-      "Practicing proper hand positioning",
-      "Playing a simple five-note exercise with both hands"
+      "How to hold the pick correctly",
+      "Basic guitar strumming techniques",
+      "How to produce a good sound from the guitar"
     ],
     "detailLearn": [
-      "Naming of piano keys: Be able to identify the names of individual piano keys, including the white keys (C, D, E, F, G, A, B) and the black keys.",
-      "Relationship between notes: Understand the relationships between notes on the piano, including how to find the notes above and below a given note.",
-      "Basic finger numbering: The standard finger numbering system for the right and left hands, which is essential for playing piano.",
-      "Basic note patterns: Simple note patterns, such as the five-note pattern C-D-E-F-G."
+      "Holding the Pick: A detailed guide on how to hold the pick for comfort and control.",
+      "Strumming Techniques: Different strumming styles such as upstrokes, downstrokes, and how to combine them.",
+      "Sound Production: How to adjust your strumming force to create the best sound from the guitar."
     ]
   },
   {
     "id": "2",
-    "name": "Lesson 2: Identifying notes on the treble clef and finger exercise pattern number 2",
-    "videoThumbnail": "https://www.youtube.com/embed/VbYJNB6dGEU?si=AYo4rabMy6baWGM4",
-    "shortDescription": "In this second lesson, you will learn about identifying notes on the treble clef and a fingering pattern that can be used to play scales and arpeggios.",
-    "thumbnail": "https://media.gettyimages.com/id/1472543626/video/teenage-boy-practicing-piano-at-home.jpg?s=640x640&k=20&c=NmZ8rl65RAAogNVi1qd_zWBpERSXCaQFDcUBf8c8YR8=",
-    "category": "Piano",
+    "name": "Lesson 2: Alternate Picking Techniques",
+    "videoThumbnail": "https://www.youtube.com/embed/tYtNBh1HcX4?feature=youtu.be",
+    "shortDescription": "In this lesson, you will learn the fundamentals of alternate picking, focusing on the importance of maintaining an up and down motion while playing.",
+    "thumbnail": "https://img.notionusercontent.com/s3/prod-files-secure%2F1c075c65-ec18-4faa-854f-310570fd9d0b%2F6607d55f-dd34-448f-bd7d-f52ada101112%2Fimagee.jpg/size/w=1250?exp=1729948071&sig=hGEgFSupljEYyCijdT9KPW4W2_LVAd2ZOj9Dse5c80E",
+    "category": "Guitar",
     "level": "1",
     "target": [
-      "How to identify the notes of the major scale on the treble clef",
-      "How to play a basic fingering pattern",
-      "How to practice scales, arpeggios and improve your piano playing technique"
+      "Understanding alternate picking",
+      "Practicing up and down motion",
+      "Skipping strings effectively"
     ],
     "detailLearn": [
-      "Treble Clef: Understand the layout of the treble clef, including the five lines and four spaces, as well as the numbering system from 1 to 5 and A to E.",
-      "Note Names: Names of the notes on the treble clef, starting with the note G on the second line and proceeding upwards and downwards using the pattern G, A, B, C, D, E, F.",
-      "Ledger Lines: Used to represent notes above or below the five lines of the staff."
+      "Alternate Picking: Learn the technique of alternating between upstrokes and downstrokes.",
+      "String Switching: Practice switching strings after a downward motion with an upward motion.",
+      "String Skipping: Get accustomed to skipping strings to prepare for playing songs."
     ]
   },
   {
     "id": "3",
-    "name": "Lesson 3: Note duration, time signature, dotted notes, and finger exercise pattern number 3",
-    "videoThumbnail": "https://www.youtube.com/embed/zgJ_8-JpFy8?si=zdz0kNZosVYm5XyP",
-    "shortDescription": "Did you know that music notes have different durations and sheet music uses numbers to indicate the number of beats in a measure? In this lesson, you will learn about music notes, rhythm and how to play them.",
-    "thumbnail": "https://media.gettyimages.com/id/1432239300/video/teenage-boy-playing-piano.jpg?s=640x640&k=20&c=JISEo3Zuh9P5lyAttj0jjsV4s9cjXDywF9XbKp-NOAQ=",
-    "category": "Piano",
+    "name": "Lesson 3: Pressing the Fretboard",
+    "videoThumbnail": "https://youtu.be/hXZmghJPORY",
+    "shortDescription": "Learn how to press the strings correctly to produce clear sounds.",
+    "thumbnail": "https://img.notionusercontent.com/s3/prod-files-secure%2F1c075c65-ec18-4faa-854f-310570fd9d0b%2F2dd8d166-20b8-4779-85c4-dad0b02210df%2Feeeee.jpg/size/w=1300?exp=1729948133&sig=Q1hekFNS3e6mqUmvD-GAqJQuBnoKNEKjGoVA_sKEv20",
+    "category": "Guitar",
     "level": "1",
     "target": [
-      "Music notes’ durations",
-      "Indicating number of beats in a measure",
-      "Dotted notes",
-      "Finger practice"
+      "Proper finger placement",
+      "Producing clear notes",
+      "Improving finger strength"
+    ],
+    "detailLearn": [
+      "Finger Placement: Learn how to position your fingers on the fretboard for optimal sound.",
+      "Sound Clarity: Techniques to ensure your notes ring clearly without buzzing.",
+      "Strength Building: Exercises to strengthen your fingers for better control."
     ]
   },
   {
     "id": "4",
-    "name": "Lesson 4: Bass clef, repeat signs, and finger exercise pattern number 4",
-    "videoThumbnail": "https://www.youtube.com/embed/KjTbbzZGuCI?si=eYOrENvH7KoFcPbX",
-    "shortDescription": "This lesson will cover how to identify the keys on the treble clef and also how to use the bass clef to play the left hand. What’s more, I will discuss the repeat sign, which tells the player to play a section of music twice.",
+    "name": "Lesson 4: Learning the 1-2-3-4 Exercise",
+    "videoThumbnail": "https://youtu.be/ZCnUiEoaOWk",
+    "shortDescription": "Combine both hands in this exercise to improve finger strength and coordination.",
     "thumbnail": "https://media.gettyimages.com/id/1472540944/video/teenage-boy-practicing-piano-at-home.jpg?s=640x640&k=20&c=LjUvLipZliUwzJda2Et7gtsGmO4RNsds-j4lqkvu2Xo=",
-    "category": "Piano",
-    "level": "2",
+    "category": "Guitar",
+    "level": "1",
+    "target": [
+      "Combining both hands",
+      "Improving finger strength",
+      "Coordination between hands"
+    ],
     "detailLearn": [
-      "How to identify the keys on the bass clef",
-      "How to understand the repeat sign",
-      "How to combine both hands to play a short piece of music",
-      "How to use a new finger exercise to strengthen your fingers"
+      "Exercise Overview: Learn the '1 2 3 4' exercise to develop finger independence.",
+      "Fretboard Navigation: Practice moving across the fretboard while maintaining proper technique.",
+      "Timing Practice: Focus on playing in time and gradually increasing speed."
     ]
   },
   {
     "id": "5",
-    "name": "Lesson 5: What are intervals and tones? Learn about intervals, tones, and finger exercise pattern number 5",
-    "videoThumbnail": "https://www.youtube.com/embed/jujVIpg9RU0?si=o4a1W-A_ahjMg1Br",
-    "shortDescription": "In this fifth lesson, you will learn about music intervals and octaves, including the definition of the interval between two notes and counting the number of notes between two notes.",
+    "name": "Lesson 5: Moving the 1-2-3-4 Exercise",
+    "videoThumbnail": "https://youtu.be/tpBSefO4Hh8",
+    "shortDescription": "Expand your skills by moving the 1-2-3-4 exercise across the fretboard, improving speed and accuracy.",
     "thumbnail": "https://media.gettyimages.com/id/1432245877/video/teenage-boy-playing-piano.jpg?s=640x640&k=20&c=d62Pik5ToBuWYAyc7gS1HrN4XP7cvummRqxLiRgFzEo=",
-    "category": "Piano",
+    "category": "Guitar",
     "level": "2",
+    "target": [
+      "Moving across the fretboard",
+      "Improving speed and accuracy",
+      "Timing and placement"
+    ],
     "detailLearn": [
-      "Intervals and octaves",
-      "How to count the number of notes within an octave",
-      "Different types of octaves",
-      "Finger exercise"
+      "Fretboard Movement: Learn to navigate the fretboard smoothly while playing the '1 2 3 4' exercise.",
+      "Speed Development: Exercises to increase your speed without sacrificing accuracy.",
+      "Timing Control: Practice maintaining a steady rhythm while moving."
     ]
   },
   {
     "id": "6",
-    "name": "Lesson 6: Accidentals and finger exercise pattern number 6",
-    "videoThumbnail": "https://www.youtube.com/embed/yjvJ9tx0cUg?si=5kiuN2c_SThI6Szu",
-    "shortDescription": "In this sixth lesson, you will learn about three types of accidentals in music: sharps, flats, and naturals.",
+    "name": "Lesson 6: Vibrato",
+    "videoThumbnail": "https://youtu.be/dVP8nugRbjA",
+    "shortDescription": "Learn how to perform vibrato on the electric guitar and improve finger movement for smoother transitions.",
     "thumbnail": "https://media.gettyimages.com/id/1472552417/video/teenage-boy-practicing-piano-at-home.jpg?s=640x640&k=20&c=GI-hQ6YK7is7cOsUW98yg7DkXnA6NafhLHEZJXUVkqo=",
-    "category": "Piano",
+    "category": "Guitar",
     "level": "2",
+    "target": [
+      "Understanding vibrato technique",
+      "Improving finger dexterity",
+      "Creating smooth transitions"
+    ],
     "detailLearn": [
-      "What are the sharps, the flats, the naturals?",
-      "How to read and play with accidentals"
+      "Vibrato Basics: Learn the fundamentals of vibrato and its importance in guitar playing.",
+      "Finger Control: Exercises to enhance finger control for smoother vibrato.",
+      "Expressive Playing: Techniques to incorporate vibrato into your playing for emotional impact."
     ]
   },
   {
     "id": "7",
-    "name": "Lesson 7: Eighth notes and finger exercise pattern number 7",
-    "videoThumbnail": "https://www.youtube.com/embed/IJZad4HVF-k?si=oFMu6xleeRrkc0O7",
-    "shortDescription": "Have you ever been confused by the differences between quarter notes and eighth notes, or even more? So this lesson will teach you how to play various note combinations, including quarter notes, half notes, eighth notes, and sixteenth notes, in different rhythms and tempos.",
-    "thumbnail": "https://media.gettyimages.com/id/1669475287/video/teenage-boy-is-practicing-playing-grand-piano.jpg?s=640x640&k=20&c=B7vCUO4TcPScDj-i58QARftYrTkKqIlJXzOAooirk9M=",
-    "category": "Piano",
-    "level": "2"
+    "name": "Lesson 7: Vibrato",
+    "videoThumbnail": "https://youtu.be/bYcTNig3msA",
+    "shortDescription": "Learn how to move your fingers up and down to create smoother sounds (slide). Gradually transition from using three fingers to one finger for slide.",
+    "thumbnail": "https://img.notionusercontent.com/s3/prod-files-secure%2F1c075c65-ec18-4faa-854f-310570fd9d0b%2Fc3e64ade-26d3-4c3e-8458-9257affa8a33%2FNew_Projesssct.jpg/size/w=1150?exp=1729948183&sig=pNdbMZqiPkReyu1uhyyQD3Gm4EZeVmy2ZZ7NMAZ6zxI",
+    "category": "Guitar",
+    "level": "2",
+    "target": [
+      "Understanding the vibrato technique",
+      "Improving finger dexterity",
+      "Creating smooth transitions"
+    ],
+    "detailLearn": [
+      "Vibrato Basics: Learn the fundamentals of vibrato and its importance in guitar playing.",
+      "Finger Control: Exercises to enhance finger control for smoother vibrato.",
+      "Expressive Playing: Techniques to incorporate vibrato into your playing for emotional impact."
+    ]
   },
   {
     "id": "8",
-    "name": "Lesson 8: Triplets and finger exercise pattern number 8",
-    "videoThumbnail": "https://www.youtube.com/embed/LNPeufPaWwc?si=nTK0SAE1d662fZmi",
-    "shortDescription": "You may sometimes encounter a tiny number 3 which is noted on top or beneath the notes and do not know the exact way to play these notes. In this eighth lesson, I will explain about triplets and their different types and also how to count them.",
+    "name": "Lesson 8: Hammer On",
+    "videoThumbnail": "https://youtu.be/uZKWd6VYaJ8",
+    "shortDescription": "Master the hammer-on technique to improve your speed and fluidity on the guitar.",
     "thumbnail": "https://media.gettyimages.com/id/135821555/video/pianists-hands.jpg?s=640x640&k=20&c=Nyi_GBLMjG9gU2JtcGkwKArmk2cBmrz5QK35oJiD9z4=",
-    "category": "Piano",
-    "level": "3"
+    "category": "Guitar",
+    "level": "3",
+    "target": [
+      "Understanding hammer-on technique",
+      "Improving finger speed",
+      "Creating smooth transitions"
+    ],
+    "detailLearn": [
+      "Hammer-On Basics: Learn how to execute a hammer-on effectively.",
+      "Speed Exercises: Practice drills to increase your finger speed.",
+      "Transition Techniques: Tips for making smooth transitions between notes."
+    ]
   },
   {
     "id": "9",
-    "name": "Lesson 9: Chords and how to form triads",
-    "videoThumbnail": "https://www.youtube.com/embed/J9ZKSD5BB5I?si=41RJUJSYAlehcGBF",
-    "shortDescription": "Many of you may find it difficult to find chords, play the melody, or accompany a song. In this lesson, you will be covered about basic chord types, such as major, minor, augmented, and diminished.",
-    "thumbnail": "https://media.gettyimages.com/id/145754696/video/pianist-composing-music.jpg?s=640x640&k=20&c=KHqrv1eEYWTmUiEnRDH8Ofa8LGBA6jLVzpfHbO87gUo=",
-    "category": "Piano",
-    "level": "3"
+    "name": "Lesson 9: Hammer On 2",
+    "videoThumbnail": "https://youtu.be/wsgQ2BGwFjE",
+    "shortDescription": "Phối hợp kĩ năng hammer on với bài tập và tempo, học cách kiểm soát tay khi hammer on để đúng nhịp.",
+    "thumbnail": "https://img.notionusercontent.com/s3/prod-files-secure%2F1c075c65-ec18-4faa-854f-310570fd9d0b%2F4a7c5dc4-31de-4b32-8241-107b331a997b%2Fhammeron2.jpg/size/w=1090?exp=1729948203&sig=jiPfyaalqNp2cazQfvt1c5KBsGvvi--GC9Bij4JXh0M",
+    "category": "Guitar",
+    "level": "3",
+    "target": [
+      "Hiểu biết về kỹ thuật hammer on",
+      "Cải thiện khả năng kiểm soát tay",
+      "Thực hành với tempo"
+    ],
+    "detailLearn": [
+      "Cơ bản về Hammer On: Học cách thực hiện kỹ thuật hammer on một cách hiệu quả.",
+      "Bài tập tốc độ: Thực hành các bài tập để tăng tốc độ ngón tay.",
+      "Kỹ thuật chuyển tiếp: Mẹo để tạo ra các chuyển tiếp mượt mà giữa các nốt."
+    ]
   },
   {
     "id": "10",
-    "name": "Lesson 10: Seventh chords and how to form seventh chords",
-    "videoThumbnail": "https://www.youtube.com/watch?v=8nBpnunIY6Y",
-    "shortDescription": "I hope you have firmly grasped the knowledge about chords in the previous lesson. This lesson will explain to you about various types of dominant seventh chords and also go over the fundamentals of chords you learned.",
+    "name": "Lesson 10: Combining Techniques",
+    "videoThumbnail": "https://youtu.be/uNCz9C_i2aY",
+    "shortDescription": "Learn to combine various techniques learned in intermediate lessons and improve your rhythmic accuracy while using these techniques.",
     "thumbnail": "https://media.gettyimages.com/id/1441713538/video/macro-overhead-shot-of-a-mans-fingers-playing-black-and-white-piano-keys.jpg?s=640x640&k=20&c=am17MFrXhH2ZmWEjQ0-ic0vfXBW6DODE6yAZ4ug3jd0=",
-    "category": "Piano",
-    "level": "3"
+    "category": "Guitar",
+    "level": "3",
+    "target": [
+      "Combining learned techniques",
+      "Improving rhythmic accuracy",
+      "Enhancing overall performance"
+    ],
+    "detailLearn": [
+      "Technique Integration: Learn how to blend different techniques into your playing.",
+      "Rhythm Practice: Exercises to improve your timing and rhythm.",
+      "Performance Tips: Strategies for enhancing your overall guitar performance."
+    ]
   }
 ]

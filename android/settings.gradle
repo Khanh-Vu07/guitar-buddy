@@ -1,4 +1,4 @@
-rootProject.name = 'piano-app'
+rootProject.name = 'guitar-app'
 
 dependencyResolutionManagement {
   versionCatalogs {

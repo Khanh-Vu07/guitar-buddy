@@ -15,7 +15,7 @@ const WelcomeScreen = () => {
         source={require('@/assets/images/onboard.png')}
       >
         <View className="pb-16 px-6">
-          <Text className="text-3xl font-light text-white mb-8 text-center">Piano Pulse</Text>
+          <Text className="text-3xl font-light text-black mb-8 text-center">Guitar Buddy</Text>
           <Button title="Login" onPress={() => router.push('/sign-in')} />
         </View>
       </ImageBackground>

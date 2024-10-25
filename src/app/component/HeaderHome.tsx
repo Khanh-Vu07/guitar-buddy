@@ -27,7 +27,7 @@ export default function HeaderHome({ title, rightAction }: IHeaderHome) {
         </TouchableOpacity>
       </View>
       {title && <Text className="font-bold text-xl">{title}</Text>}
-      {!title && <Text className="font-bold text-xl">Piano Pulse</Text>}
+      {!title && <Text className="font-bold text-xl">Guitar Buddy</Text>}
       <View className="w-[40px]">{rightAction}</View>
     </View>
   )

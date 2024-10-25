@@ -7,7 +7,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>$(DEVELOPMENT_LANGUAGE)</string>
     <key>CFBundleDisplayName</key>
-    <string>piano-app</string>
+    <string>guitar-app</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
@@ -28,13 +28,13 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>template-app</string>
-          <string>com.anonymous.piano-app</string>
+          <string>com.anonymous.guitar-app</string>
         </array>
       </dict>
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>exp+piano-app</string>
+          <string>exp+guitar-app</string>
         </array>
       </dict>
     </array>

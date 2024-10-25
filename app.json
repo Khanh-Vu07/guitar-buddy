@@ -1,8 +1,8 @@
 {
   "expo": {
     "jsEngine": "jsc",
-    "name": "piano-app",
-    "slug": "piano-app",
+    "name": "Guitar App",
+    "slug": "guitar-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "scheme": "template-app",
@@ -16,15 +16,20 @@
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
-        "UIBackgroundModes": ["audio"]
+        "UIBackgroundModes": [
+          "audio"
+        ]
       },
-      "bundleIdentifier": "com.anonymous.piano-app"
+      "bundleIdentifier": "com.anonymous.guitar-app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -41,6 +46,11 @@
     "experiments": {
       "typedRoutes": true,
       "tsconfigPaths": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0fc497d2-f71b-416c-b7d8-1917df65ca61"
+      }
     }
   }
 }
