@@ -28,6 +28,4 @@ Guitar Master is available for both iOS and Android devices.
 ## [Installation](https://drive.google.com/file/d/1QPqOX1nOZMhoFaA_LiJ2r2CDtLLAF9mX/view?usp=sharing)
 
 # Demo
-[![Xem video](./assets/screens/image.png)](https://firebasestorage.googleapis.com/v0/b/food-donation-98ef2.appspot.com/o/record_khanh.mp4?alt=media&token=fc5c28e5-cb77-4b1f-bbc5-c6459010504e)# guitar-buddy
-# guitar-buddy
-# guitar-buddy
+[![Xem video](./assets/screens/image.png)](https://firebasestorage.googleapis.com/v0/b/food-donation-98ef2.appspot.com/o/record_khanh.mp4?alt=media&token=fc5c28e5-cb77-4b1f-bbc5-c6459010504e)
